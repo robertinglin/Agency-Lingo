@@ -1,6 +1,6 @@
 import React from 'react';
 import './main.css';
-import Button from 'react-bootstrap/lib/Button'
+
 
 //row for each Sapient lingo
 var LingoRow = React.createClass({
@@ -42,7 +42,7 @@ var LingoTable = React.createClass({
                              </thead>
                             
                              <tbody>{this.state.terms.filter(term => {
-                                return !!~term.Name.indexOf(this.props.filterText)})
+                                return ~term.Name.indexOf(this.props.filterText)})
                              .map(term => <LingoRow term={term} key={term.name} />)} </tbody>
                          </table>
             );
