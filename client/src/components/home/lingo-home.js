@@ -1,8 +1,4 @@
 import React from 'react';
-import './main.css';
-
-
-//row for each Sapient lingo
 var LingoRow = React.createClass({
         render: function() {
                     return (
@@ -41,8 +37,8 @@ var LingoTable = React.createClass({
                                  </tr>
                              </thead>
                             
-                             <tbody>{this.state.terms.filter(term => {
-                                return ~term.Name.indexOf(this.props.filterText)})
+                             <tbody>{this.state.terms.filter(term =>
+                                !!~term.Name.indexOf(this.props.filterText))
                              .map(term => <LingoRow term={term} key={term.name} />)} </tbody>
                          </table>
             );
@@ -50,7 +46,7 @@ var LingoTable = React.createClass({
         },
         //term getting JSON data
         getTerms:function(){
-                fetch('./lingo.json')
+                fetch('data/json/lingo.json')
                 .then(res => {
                         if (res.status !== 200) {
                                 console.log('Get it together, Nick! Error: ' + res.status);
