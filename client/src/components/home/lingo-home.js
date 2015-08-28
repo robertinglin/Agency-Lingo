@@ -15,12 +15,26 @@ var LingoTile = React.createClass({
         getInitialState: function() {
 
             return {
-                bgColor: pastelColors()
+                bgColor: pastelColors(),
+                active: false,
+                onClick: (function(){
+                    this.setState( { 'active' : !this.state.active } );
+                }).bind( this )
             };
         },
         render: function() {
+
+            var Definition = <div className="definition">{this.props.term.Definition}</div>,
+                Note = <div className="note">{this.props.term.Note}</div>;
+
+
                     return (
-                        <div className="tile" style={{background:this.state.bgColor}}>{this.props.term.Name}</div>
+                        <div onClick={this.state.onClick} className="tile" style={{background:this.state.bgColor}}>
+                            <div className="centered">{this.props.term.Name}</div>
+                            {this.state.active ? Definition : '' }
+                            {this.state.active && this.props.term.Note ? Note : ''}
+                            
+                        </div>
                         // <tr>
                         //   <td>{this.props.term.Name}</td>
                         //   <td>{this.props.term.Definition}</td>
