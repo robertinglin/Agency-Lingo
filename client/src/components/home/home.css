@@ -4,8 +4,10 @@
 }
 
 .tile {
-	float: left;
-	height: 200px;
-	width: 200px;
-	border: 1px solid black;
+    float: left;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 85px;
 }
