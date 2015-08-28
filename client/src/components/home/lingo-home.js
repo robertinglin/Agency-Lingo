@@ -1,12 +1,23 @@
 import React from 'react';
-var LingoRow = React.createClass({
+
+ function pastelColors(){
+    var r = (Math.round(Math.random()* 127) + 127).toString(16);
+    var g = (Math.round(Math.random()* 127) + 127).toString(16);
+    var b = (Math.round(Math.random()* 127) + 127).toString(16);
+    return '#' + r + g + b;
+}
+
+var LingoTile = React.createClass({
+
         render: function() {
+console.log(pastelColors());
                     return (
-                        <tr>
-                          <td>{this.props.term.Name}</td>
-                          <td>{this.props.term.Definition}</td>
-                          <td>{this.props.term.Note}</td>
-                        </tr>
+                        <div className="tile" style={{background:pastelColors()}}>{this.props.term.Name}</div>
+                        // <tr>
+                        //   <td>{this.props.term.Name}</td>
+                        //   <td>{this.props.term.Definition}</td>
+                        //   <td>{this.props.term.Note}</td>
+                        // </tr>
                           );
         }
 });
@@ -28,19 +39,12 @@ var LingoTable = React.createClass({
         //creating table and headers
         render() {
                 return (
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Definition</th>
-                                    <th>Note</th>
-                                 </tr>
-                             </thead>
-                            
-                             <tbody>{this.state.terms.filter(term =>
+                        <div className="container">
+                        
+                             <div className="container">{this.state.terms.filter(term =>
                                 !!~term.Name.indexOf(this.props.filterText))
-                             .map(term => <LingoRow term={term} key={term.name} />)} </tbody>
-                         </table>
+                             .map(term => <LingoTile term={term} key={term.name} />)} </div>
+                         </div>
             );
  
         },
@@ -115,4 +119,4 @@ var FilterableLingoTable = React.createClass({
                     );
         }
 });
-React.render(<FilterableLingoTable  />, document.getElementById('lingo-container'));
+React.render(<FilterableLingoTable />, document.getElementById('lingo-container'));

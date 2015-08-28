@@ -15,28 +15,28 @@
   "license": "ISC",
   "devDependencies": {
     "babelify": "^6.0.2",
-    "bootstrap": "3.3.4",
     "browser-sync": "^2.6.5",
     "browserify": "^9.0.8",
     "browserify-shim": "^3.8.6",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.5.2",
     "gulp-if": "^1.2.5",
     "gulp-jshint": "^1.10.0",
     "jshint-stylish": "^1.0.1",
     "lodash": "^3.7.0",
+    "react-bootstrap": "^0.25.0",
     "run-sequence": "^1.1.0",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.2.0",
-    "gulp-concat": "^2.5.2"
+    "watchify": "^3.2.0"
   },
   "browserify": {
     "transform": [
       "browserify-shim"
     ]
   },
-   "browserify-shim": {
-     "react": "React"
+  "browserify-shim": {
+    "react": "React"
   }
 }
