@@ -1,0 +1,11 @@
+.jumbotron {
+	font-size: 48px;
+	text-align: center;
+}
+
+.tile {
+	float: left;
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+}
