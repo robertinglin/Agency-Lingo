@@ -1,6 +1,9 @@
 import React from 'react';
+import LingoTableController from './lingo-table-controller'
 
- function pastelColors(){
+var lingoTableController = new LingoTableController();
+
+function pastelColors(){
     var r = (Math.round(Math.random()* 127) + 127).toString(16);
     var g = (Math.round(Math.random()* 127) + 127).toString(16);
     var b = (Math.round(Math.random()* 127) + 127).toString(16);
@@ -9,10 +12,15 @@ import React from 'react';
 
 var LingoTile = React.createClass({
 
+        getInitialState: function() {
+
+            return {
+                bgColor: pastelColors()
+            };
+        },
         render: function() {
-console.log(pastelColors());
                     return (
-                        <div className="tile" style={{background:pastelColors()}}>{this.props.term.Name}</div>
+                        <div className="tile" style={{background:this.state.bgColor}}>{this.props.term.Name}</div>
                         // <tr>
                         //   <td>{this.props.term.Name}</td>
                         //   <td>{this.props.term.Definition}</td>
@@ -41,9 +49,10 @@ var LingoTable = React.createClass({
                 return (
                         <div className="container">
                         
-                             <div className="container">{this.state.terms.filter(term =>
-                                !!~term.Name.indexOf(this.props.filterText))
-                             .map(term => <LingoTile term={term} key={term.name} />)} </div>
+                             <div className="container">{
+                                lingoTableController.filterData( this.state.terms, this.props.filterText )
+                                    .map(term => <LingoTile term={term} key={term.name} />)
+                                } </div>
                          </div>
             );
  
