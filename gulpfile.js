@@ -26,7 +26,7 @@ var SRC_JS = SRC_DIR;
 var SRC_CSS = SRC_DIR;
 var SRC_SASS = path.join(SRC_DIR, 'sass');
 var SRC_LESS = path.join(SRC_DIR, 'less');
-var SRC_IMG = path.join(SRC_DIR, 'img');
+var SRC_IMG = path.join(SRC_DIR, 'images');
 var SRC_FONTS = path.join(SRC_DIR, 'fonts');
 var SRC_PARTIALS = SRC_DIR;
 var SRC_DATA = SRC_DIR;
@@ -75,6 +75,14 @@ gulp.task('partials', function () {
         stream: true
     })));
 });
+
+gulp.task('images', function () {
+    return gulp.src(SRC_IMG + '/*')
+        .pipe(gulp.dest(BUILD_DIR))
+        .pipe(gulpif(!production, browserSync.reload({
+        stream: true
+    })));
+})
 
 //move shared folder
 
@@ -179,6 +187,7 @@ gulp.task('build', function (cb) {
             'lint',
             'scripts',
             'partials',
+            'images',
             'css',
             'js',
             'data',

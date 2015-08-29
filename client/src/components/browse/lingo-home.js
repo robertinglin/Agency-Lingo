@@ -1,9 +1,10 @@
 import React from 'react';
 
 function pastelColors(){
-    var r = (Math.round(Math.random()* 127) + 127).toString(16);
-    var g = (Math.round(Math.random()* 127) + 127).toString(16);
-    var b = (Math.round(Math.random()* 127) + 127).toString(16);
+    var darkFactor = 0.75
+    var r = parseInt((Math.round(Math.random()* 127) + 127) * darkFactor ).toString(16);
+    var g = parseInt((Math.round(Math.random()* 127) + 127) * darkFactor ).toString(16);
+    var b = parseInt((Math.round(Math.random()* 127) + 127) * darkFactor ).toString(16);
     return '#' + r + g + b;
 }
 
@@ -27,7 +28,7 @@ var LingoTile = React.createClass({
                 <div onClick={this.props.onClick.bind( null, this.props.term.Name )} 
                 	className={classString} 
                 	style={{background:this.state.bgColor}}>
-                    <div className="centered">{this.props.term.Name}</div>
+                    <h2 className="centered">{this.props.term.Name}</h2>
                 </div>
             );
         }

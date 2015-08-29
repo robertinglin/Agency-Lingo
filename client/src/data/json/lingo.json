@@ -11,8 +11,9 @@
     },
     {
         "Name": "ABP",
-        "Definition": "Aggressive But Possible (estimation terminology). See also Estimation Tool",
-        "Note": ""
+        "Definition": "Aggressive But Possible (estimation terminology).",
+        "Note": "",
+        "Related": [ "Estimation Tool" ]
     },
     {
         "Name": "Accountability",
@@ -85,7 +86,7 @@
         "Note": "Below the line (advertising) - Wikipedia, the free encyclopedia"
     },
     {
-        "Name": "B/O",
+        "Name": "B / O",
         "Definition": "Breakout:  Part of the workshops where the team breaks into smaller teams to work on specific objectives to be accomplished.",
         "Note": "internal"
     },
@@ -110,8 +111,8 @@
         "Note": ""
     },
     {
-        "Name": "Backoffice/Legacy systems",
-        "Definition": "software systems that the client uses at their site currently which the software/website we are developing for them will/may need to interact with",
+        "Name": "Backoffice / Legacy systems",
+        "Definition": "software systems that the client uses at their site currently which the software / website we are developing for them will / may need to interact with",
         "Note": ""
     },
     {
@@ -126,7 +127,7 @@
     },
     {
         "Name": "Bandwidth",
-        "Definition": "The data transfer rate of an electronic communications system.  In Sapient terms, the amount of capacity that an individual or team has to carry out a project/task.",
+        "Definition": "The data transfer rate of an electronic communications system.  In Sapient terms, the amount of capacity that an individual or team has to carry out a project / task.",
         "Note": ""
     },
     {
@@ -162,12 +163,14 @@
     {
         "Name": "Beach",
         "Definition": "On the bench",
-        "Note": ""
+        "Note": "",
+        "Related": [ "On the Bench", "Bench" ]
     },
     {
         "Name": "Bench",
         "Definition": "In between projects",
-        "Note": "internal"
+        "Note": "internal",
+        "Related": [ "Beach", "On The Bench" ]
     },
     {
         "Name": "BHAG",
@@ -256,7 +259,7 @@
     },
     {
         "Name": "Buy-in",
-        "Definition": "Agreement to move forward on a given subject/project.  Similar terms used: ",
+        "Definition": "Agreement to move forward on a given subject / project.  Similar terms used: ",
         "Note": ""
     },
     {
@@ -391,7 +394,7 @@
     },
     {
         "Name": "Cluster",
-        "Definition": "Network of confusion/something screwed up.",
+        "Definition": "Network of confusion / something screwed up.",
         "Note": ""
     },
     {
@@ -401,7 +404,7 @@
     },
     {
         "Name": "CMM",
-        "Definition": "Capability Maturity Model: assess the effectiveness of a software development processes on a scale from 1 (utter chaos) to 5 (continuously improving). (...) developed by the Software Engineering Institute (SEI). (...) Today many U.S. government agencies in addition to the DoD insist that companies that bid for their business obtain at least a CMM Level 3 assessment—meaning the development organization has a codified, repeatable process for an entire division or company. see http://www.cio.com/archive/030104/cmm.html ",
+        "Definition": "Capability Maturity Model: assess the effectiveness of a software development processes on a scale from 1 (utter chaos) to 5 (continuously improving). (...) developed by the Software Engineering Institute (SEI). (...) Today many U.S. government agencies in addition to the DoD insist that companies that bid for their business obtain at least a CMM Level 3 assessment—meaning the development organization has a codified, repeatable process for an entire division or company. see http: / /www.cio.com / archive / 030104 / cmm.html ",
         "Note": "internal"
     },
     {
@@ -472,7 +475,8 @@
     {
         "Name": "CR",
         "Definition": "Change Request",
-        "Note": "See also SCO"
+        "Note": "See also SCO",
+        "Related": ["SCO"]
     },
     {
         "Name": "Cranky Dave",
@@ -500,7 +504,7 @@
         "Note": ""
     },
     {
-        "Name": "CXM/CEM",
+        "Name": "CXM / CEM",
         "Definition": "Customer Experience Management",
         "Note": ""
     },
@@ -755,6 +759,10 @@
         "Note": ""
     },
     {
+        "Name": "Estimation Tool",
+        "Definition": "A tool used to predict chance of completion of a tool in a given amount of time"
+    },
+    {
         "Name": "ETC",
         "Definition": "estimated time to complete",
         "Note": ""
@@ -766,7 +774,7 @@
     },
     {
         "Name": "Exit Criteria",
-        "Definition": "Items/tasks that you need to accomplish before moving on to the next phase or task.",
+        "Definition": "Items / tasks that you need to accomplish before moving on to the next phase or task.",
         "Note": ""
     },
     {
@@ -830,7 +838,7 @@
         "Note": ""
     },
     {
-        "Name": "FT/FP",
+        "Name": "FT / FP",
         "Definition": "fixed time / fixed price",
         "Note": "internal"
     },
@@ -951,8 +959,9 @@
     },
     {
         "Name": "HP",
-        "Definition": "Highly Probable (estimation terminology). See also Estimation Tool",
-        "Note": ""
+        "Definition": "Highly Probable (estimation terminology).",
+        "Note": "",
+        "Related": [ "Estimation Tool" ]
     },
     {
         "Name": "HRIS",
@@ -1021,7 +1030,7 @@
     },
     {
         "Name": "Intranet",
-        "Definition": "A company's internal website.  You have to have access to the LAN and/or WAN (behind the ",
+        "Definition": "A company's internal website.  You have to have access to the LAN and / or WAN (behind the ",
         "Note": ""
     },
     {
@@ -1031,7 +1040,7 @@
     },
     {
         "Name": "ISP",
-        "Definition": "Internet Service Provider - an organization which provides access to the Internet and/or additional services.",
+        "Definition": "Internet Service Provider - an organization which provides access to the Internet and / or additional services.",
         "Note": ""
     },
     {
@@ -1262,11 +1271,12 @@
     {
         "Name": "On the Bench",
         "Definition": "Time when you are not assigned to a project or between projects.",
-        "Note": "internal"
+        "Note": "internal",
+        "Related": [ "Bench", "Beach" ]
     },
     {
         "Name": "On the Same Page",
-        "Definition": "Refers to the virtual/proverbial ",
+        "Definition": "Refers to the virtual / proverbial ",
         "Note": ""
     },
     {
@@ -1300,7 +1310,7 @@
         "Note": ""
     },
     {
-        "Name": "OTM/OTA",
+        "Name": "OTM / OTA",
         "Definition": "One Team Methodology",
         "Note": ""
     },
@@ -1401,7 +1411,7 @@
     },
     {
         "Name": "Plus / Delta feedback",
-        "Definition": "advantage / disadvantage; +/-",
+        "Definition": "advantage / disadvantage; + / -",
         "Note": "internal"
     },
     {
@@ -1460,7 +1470,7 @@
         "Note": ""
     },
     {
-        "Name": "Pres/Prez",
+        "Name": "Pres / Prez",
         "Definition": "Powerpoint presentation",
         "Note": "internal"
     },
@@ -1546,7 +1556,7 @@
     },
     {
         "Name": "Quickstart",
-        "Definition": "Quick ramp-up of workshop (e.g., business/industry context, facilitation skills, any other skills required for project)",
+        "Definition": "Quick ramp-up of workshop (e.g., business / industry context, facilitation skills, any other skills required for project)",
         "Note": ""
     },
     {
@@ -1572,7 +1582,8 @@
     {
         "Name": "RASIC",
         "Definition": "Responsible, Accountable, Support, Informed, Consulted",
-        "Note": "MSL specific (See also RACI in ALL)"
+        "Note": "MSL specific (See also RACI in ALL)",
+        "Related" : ["RACI"]
     },
     {
         "Name": "RD",
@@ -1655,7 +1666,7 @@
         "Note": ""
     },
     {
-        "Name": "roll on/roll off",
+        "Name": "roll on / roll off",
         "Definition": "to start or finish a role or project",
         "Note": ""
     },
@@ -1717,7 +1728,8 @@
     {
         "Name": "SCO",
         "Definition": "Scope Change",
-        "Note": "See also CR"
+        "Note": "See also CR",
+        "Related": "CR"
     },
     {
         "Name": "Scope",
@@ -1752,7 +1764,7 @@
     {
         "Name": "SDL",
         "Definition": "Service Delivery Lead",
-        "Note": "Old word for ADL/RDL"
+        "Note": "Old word for ADL / RDL"
     },
     {
         "Name": "SDL",
@@ -1765,7 +1777,7 @@
         "Note": ""
     },
     {
-        "Name": "seeded/seeding",
+        "Name": "seeded / seeding",
         "Definition": "when an individual from one discipline acts as a bridge to another discipline",
         "Note": ""
     },
@@ -1856,7 +1868,7 @@
     },
     {
         "Name": "SQA",
-        "Definition": "The Software Quality Assurance (SQA) is a group of auditors/coaches dedicated to ensuring process compliance throughout the BU. They are a distributed group responsible for facilitating and then measuring adoption and process compliance on a regular basis.",
+        "Definition": "The Software Quality Assurance (SQA) is a group of auditors / coaches dedicated to ensuring process compliance throughout the BU. They are a distributed group responsible for facilitating and then measuring adoption and process compliance on a regular basis.",
         "Note": "internal"
     },
     {
@@ -2101,12 +2113,12 @@
     },
     {
         "Name": "war room",
-        "Definition": "fairly standard consulting term, used as a central place for project planning, project plan presentation, team/project metrics, team meetings, etc.",
+        "Definition": "fairly standard consulting term, used as a central place for project planning, project plan presentation, team / project metrics, team meetings, etc.",
         "Note": ""
     },
     {
         "Name": "Waterfall Method",
-        "Definition": "A development method whereby each step is completed before the next has begun.  For example, requirement gathering/analysis is completed and then design begins.  Often an entirely new group is brought in for each phase in the process.  The waterfall analogy comes from the image that each step is a box.  The boxes fill up and then flow into the next box.  Each step must be complete or filled up in order to move to the next, and no water can move upstream or backward through the process -thus no iteration.",
+        "Definition": "A development method whereby each step is completed before the next has begun.  For example, requirement gathering / analysis is completed and then design begins.  Often an entirely new group is brought in for each phase in the process.  The waterfall analogy comes from the image that each step is a box.  The boxes fill up and then flow into the next box.  Each step must be complete or filled up in order to move to the next, and no water can move upstream or backward through the process -thus no iteration.",
         "Note": ""
     },
     {

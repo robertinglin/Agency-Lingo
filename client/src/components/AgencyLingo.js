@@ -77,8 +77,9 @@ var AgencyLingo = React.createClass({
 
 	render: function(){
 
+		var classString = this.state.route + ' col-xs-12';
 		return (
-			<div className={this.state.route}>
+			<div className={classString}>
 				<LingoNavBar onClick={this.routeClick} />
 				{(() => {
 					switch ( this.state.route ) {
@@ -89,7 +90,7 @@ var AgencyLingo = React.createClass({
 				{ this.state.activeTerm && this.state.route === 'browse' ? 
 					<div className="activeCurtain" onClick={this.setActive} /> : '' }
 				
-				<LingoActiveTile term={this.state.activeTerm} top={this.top} />
+				<LingoActiveTile term={this.state.activeTerm} top={this.top} setActive={this.setActive} />
 			</div>
 		);
 	}
