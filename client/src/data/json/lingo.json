@@ -1729,7 +1729,7 @@
         "Name": "SCO",
         "Definition": "Scope Change",
         "Note": "See also CR",
-        "Related": "CR"
+        "Related": ["CR"]
     },
     {
         "Name": "Scope",
