@@ -4,8 +4,11 @@
 }
 
 .tile {
-	float: left;
-	height: 200px;
-	width: 200px;
 	border: 1px solid black;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	min-height: 150px;
+    line-height: 130px;
 }

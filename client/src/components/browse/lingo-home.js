@@ -21,14 +21,13 @@ var LingoTile = React.createClass({
         },
         render: function() {
 
-            var Definition = <div className="definition">{this.props.term.Definition}</div>,
-                Note = <div className="note">{this.props.term.Note}</div>;
+            var classString = 'tile col-xs-12 col-sm-6 col-md-4';
 
             return (
-                <div onClick={this.state.onClick} className="tile" style={{background:this.state.bgColor}}>
+                <div onClick={this.props.onClick.bind( null, this.props.term.Name )} 
+                	className={classString} 
+                	style={{background:this.state.bgColor}}>
                     <div className="centered">{this.props.term.Name}</div>
-                    {this.state.active ? Definition : '' }
-                    {this.state.active && this.props.term.Note ? Note : ''}
                 </div>
             );
         }
@@ -37,14 +36,18 @@ var LingoTile = React.createClass({
 //table for the whole thing
 var LingoTable = React.createClass({
 
+	setActive: function( termName ){
+
+		this.props.setActive( termName )
+	},
     //creating table and headers
     render: function() {
 
         return (
             <div className="container">
             
-                <div className="container">{
-                    this.props.terms.map(term => <LingoTile term={term} key={term.name} />)
+                <div className="row">{
+                    this.props.terms.map(term => <LingoTile term={term} key={term.name} onClick={this.setActive} />)
                 }</div>
              </div>
         );

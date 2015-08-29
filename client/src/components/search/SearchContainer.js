@@ -1,8 +1,6 @@
 import React from 'react';
 import LingoSearchBar from './SearchBar'; 
-import LingoAutoComplete from './AutoComplete'; 
-import LingoSearchTile from './SearchTile';
-
+import LingoAutoComplete from './AutoComplete';
 
 var LingoSearchContainer = React.createClass({
 	
@@ -17,13 +15,13 @@ var LingoSearchContainer = React.createClass({
 			matchingTerms,
 			selectedTerm = null;
 
-		[ partials, matchingTerms ] = this.getPartials( value );
+		partials = this.getPartials( value );
 
 		if( partials.length === 1 ) {
 
-			selectedTerm = matchingTerms[ 0 ];
-
+			selectedTerm = partials[ 0 ];
 		}
+		this.props.setActive( selectedTerm );
 
 		this.setState( { partials: partials,
 						 filterText: value,
@@ -33,7 +31,7 @@ var LingoSearchContainer = React.createClass({
 	getPartials: function( filterText ){
 
 		if( filterText.replace( /\s/g, '' ) === '' ) {
-			return [ [], [] ];
+			return [];
 		}
 
 		var searchTerm = filterText.replace(/\s/g, '').toLowerCase(),
@@ -48,7 +46,7 @@ var LingoSearchContainer = React.createClass({
 			// if we have an exact text match use that.
 			if( filterText.toLowerCase() === matchingTerms[ i ].Name.toLowerCase() ) {
 				partials = [ matchingTerms[ i ].Name ];
-				matchingTerms = [matchingTerms[ i ]];
+				
 				break;
 			} 
 			
@@ -56,7 +54,7 @@ var LingoSearchContainer = React.createClass({
 		}
 
 
-		return [ partials, matchingTerms ];
+		return partials;
 	},
 
 	componentWillUpdate: function( props, state ) {
@@ -82,7 +80,6 @@ var LingoSearchContainer = React.createClass({
 				<LingoAutoComplete
 					autoCompleteOptions={this.state.partials}
 					onSelectOption={this.setFilterText} />
-				{ this.state.selectedTerm ? <LingoSearchTile term={this.state.selectedTerm} /> : '' }
 			</div>
 		);
 	}

@@ -13,7 +13,7 @@ var LingoAutoComplete = React.createClass({
 			<div>
 				{this.props.autoCompleteOptions
 					.map( option => 
-						<button onClick={this.selectOption} value={option}>{option}</button>
+						<button key={option} onClick={this.selectOption} value={option}>{option}</button>
 					)
 				}
 			</div>
