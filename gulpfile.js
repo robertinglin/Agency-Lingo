@@ -34,7 +34,7 @@ var SRC_SHARED = SRC_DIR;
 
 var BROWSERIFY_BUNDLES = [{
     debug: true,
-    entries: SRC_JS + '/components/home/lingo-home.js',
+    entries: SRC_JS + '/components/AgencyLingo.js',
     dest: BUILD_DIR,
     outputName: 'global.js',
     paths: ['./node_modules', './src/js'],
