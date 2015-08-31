@@ -16,11 +16,11 @@ var LingoActiveTile = React.createClass({
             <ReactCSSTransitionGroup transitionName="active-tile" transitionLeave={true}>
                 { this.props.term ? (
                     <div key="active-tile" className="active-tile" >
-                        <h3>{this.props.term.Name}</h3>
-                        <p>{this.props.term.Definition}</p>
-                        {this.props.term.Related ? <h4>Related</h4> : ''}
-                        {this.props.term.Related && this.props.term.Related.length ?
-                            this.props.term.Related.map( 
+                        <h3>{this.props.term.name}</h3>
+                        <p>{this.props.term.definition}</p>
+                        {this.props.term.related.length ? <h4>Related</h4> : ''}
+                        {this.props.term.related.length ?
+                            this.props.term.related.map( 
                                 term => <button key={term} value={term} onClick={this.setActive}>{term}</button>
                             )
                             : ''}

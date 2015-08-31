@@ -36,7 +36,7 @@ var LingoSearchContainer = React.createClass({
 
 		var searchTerm = filterText.replace(/\s/g, '').toLowerCase(),
 			matchingTerms = this.props.terms.filter(function( term ){
-				return ~term.Name.toLowerCase().replace(/\s/g, '').indexOf( searchTerm );
+				return ~term.name.toLowerCase().replace(/\s/g, '').indexOf( searchTerm );
 			}),
 			partials = [],
 			len = Math.min( matchingTerms.length, 5 );
@@ -44,13 +44,13 @@ var LingoSearchContainer = React.createClass({
 		for( var i = 0; i < len; ++i ) {
 
 			// if we have an exact text match use that.
-			if( filterText.toLowerCase() === matchingTerms[ i ].Name.toLowerCase() ) {
-				partials = [ matchingTerms[ i ].Name ];
+			if( filterText.toLowerCase() === matchingTerms[ i ].name.toLowerCase() ) {
+				partials = [ matchingTerms[ i ].name ];
 				
 				break;
 			} 
 			
-			partials.push( matchingTerms[ i ].Name );
+			partials.push( matchingTerms[ i ].name );
 		}
 
 

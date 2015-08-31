@@ -25,10 +25,10 @@ var LingoTile = React.createClass({
             var classString = 'tile col-xs-12 col-sm-6 col-md-4';
 
             return (
-                <div onClick={this.props.onClick.bind( null, this.props.term.Name )} 
+                <div onClick={this.props.onClick.bind( null, this.props.term.name )} 
                 	className={classString} 
                 	style={{background:this.state.bgColor}}>
-                    <h2 className="centered">{this.props.term.Name}</h2>
+                    <h2 className="centered">{this.props.term.name}</h2>
                 </div>
             );
         }
@@ -48,7 +48,7 @@ var LingoTable = React.createClass({
             <div className="container">
             
                 <div className="row">{
-                    this.props.terms.map(term => <LingoTile term={term} key={term.name} onClick={this.setActive} />)
+                    this.props.terms.map(term => <LingoTile term={term} key={term.id} onClick={this.setActive} />)
                 }</div>
              </div>
         );
