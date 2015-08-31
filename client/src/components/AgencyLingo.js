@@ -9,7 +9,10 @@ var AgencyLingo = React.createClass({
 	
 	routeClick: function( event ) {
 
+		console.log(event);
+
 		this.setState( { route : event.target.value, activeTerm: null });
+
 	},
 
 	getTerms: function(){
