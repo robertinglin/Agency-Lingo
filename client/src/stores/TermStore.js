@@ -47,7 +47,7 @@ function loadTerms( state, rawTerms ) {
 
 	for( let i = 0, len = rawTerms.length; i < len; ++i ) {
 
-		state = createTerm( state, rawTerms[ i ].Name, rawTerms[ i ].Definition, rawTerms[ i ].Related );
+		state = createTerm( state, rawTerms[ i ].name, rawTerms[ i ].definition, rawTerms[ i ].related );
 	}
 	return state;
 }

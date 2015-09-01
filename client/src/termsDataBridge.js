@@ -3,6 +3,7 @@ import termStore from './stores/TermStore';
 class TermsDataBridge {
 
 	getTerms () {
+
 		fetch('data/json/lingo.json')
         .then(res => {
                 if (res.status !== 200) {
@@ -13,7 +14,15 @@ class TermsDataBridge {
         })
         .then(data => {
 
-            termStore.dispatch( {type: 'term/load', rawTerms: data });
+        	var termsObjects = [];
+
+        	// Manipulate the data before sending it to the store
+        	for( let i = 0, len = data.length; i < len; ++i ){
+
+        		termsObjects.push( { name : data[ i ].Name, definition: data[ i ].Definition, related: data[ i ].Related } );
+        	}
+
+            termStore.dispatch( {type: 'term/load', rawTerms: termsObjects });
             
         })
         .catch(function(err) {
