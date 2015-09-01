@@ -5,7 +5,7 @@ import LingoTable from './browse/lingo-home';
 import LingoActiveTile from './tile/ActiveTile'; 
 import ExecutionEnvironment from 'react/lib/ExecutionEnvironment';
 
-import termStore from '../flux-stuff/TermStore';
+import termStore from '../stores/TermStore';
 
 var AgencyLingo = React.createClass({
 	
@@ -131,5 +131,4 @@ var AgencyLingo = React.createClass({
 });
 
 
-
-React.render(<AgencyLingo />, document.getElementById('lingo-container'));
+export default AgencyLingo;
