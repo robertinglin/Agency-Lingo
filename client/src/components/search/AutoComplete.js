@@ -3,7 +3,7 @@ import React from 'react';
 var LingoAutoComplete = React.createClass({
 
 	selectOption: function( event ) {
-		console.log( this.props )
+		
 		this.props.onSelectOption( event.target.value );
 	},
 	

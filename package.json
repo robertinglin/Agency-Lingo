@@ -39,5 +39,9 @@
   },
   "browserify-shim": {
     "react": "React"
+  },
+  "dependencies": {
+    "immutable": "^3.7.4",
+    "redux": "^1.0.1"
   }
 }
