@@ -13,6 +13,10 @@ function TermStore( state = State, action ) {
 
 	switch ( action.type ) {
 
+		case 'term/load':
+
+			return loadTerms( state, action.rawTerms );
+
 		case 'term/create':
 
 			return createTerm( state, action.name, action.definition, action.related );
@@ -37,6 +41,15 @@ function TermStore( state = State, action ) {
 
 	}
 
+}
+
+function loadTerms( state, rawTerms ) {
+
+	for( let i = 0, len = rawTerms.length; i < len; ++i ) {
+
+		state = createTerm( state, rawTerms[ i ].Name, rawTerms[ i ].Definition, rawTerms[ i ].Related );
+	}
+	return state;
 }
 
 function createTerm( state, name, definition, related ){

@@ -11,37 +11,8 @@ var AgencyLingo = React.createClass({
 	
 	routeClick: function( event ) {
 
-		console.log(event);
-
 		this.setState( { route : event.target.value, activeTerm: null });
 
-	},
-
-	getTerms: function(){
-		fetch('data/json/lingo.json')
-            .then(res => {
-                    if (res.status !== 200) {
-                            console.log('Get it together, Nick! Error: ' + res.status);
-                            throw new Error('Error fetching');
-                    }
-                    return res.json();
-            })
-            .then(data => {
-
-                //setting state terms so that it returns JSON data in terms = []
-                for( var i = 0; i < data.length; ++i ) {
-
-                    termStore.dispatch( {type: 'term/create', name: data[ i ].Name, definition: data[ i ].Definition, related: data[ i ].Related });
-                }
-
-
-                termStore.subscribe( () => this.buildTerms() );
-                
-                this.buildTerms();
-            })
-            .catch(function(err) {
-                    console.log('Fetch Error X_x', err);
-            });
 	},
 
     buildTerms: function() {
@@ -72,22 +43,18 @@ var AgencyLingo = React.createClass({
             this.termsLookup[ terms[ i ].name ] = terms[ i ];
         }
     },
-
-    componentWillMount: function(){
-
-        this.getTerms();
-    },
-
     getInitialState: function(){
 
         return {
-            // terms: [],
             route: 'browse',
             activeTerm: null,
             terms: termStore.getState().toArray()
         }
     },
+
     componentDidMount: function(){
+        termStore.subscribe( () => this.buildTerms() );
+
         if (ExecutionEnvironment.canUseDOM) {
           window.addEventListener('scroll', this.handleScroll);
         }
