@@ -13,9 +13,12 @@ class TermsDataBridge {
         .then(res => {
 
                 if (res.status.code !== 200) {
+                    
                     console.log('fail');
                     error( res.status )
+
                 } else {
+                    
                     success( res.entity );
                 }
         })
@@ -23,8 +26,7 @@ class TermsDataBridge {
 
             client( { path :'/data/json/lingo.json' } )
                 .then( res => {
-
-                    success( res.entity.terms );
+                    success( res.entity );
 
                 })
                 .catch(function( err ){

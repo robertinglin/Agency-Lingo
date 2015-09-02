@@ -1,0 +1,2162 @@
+{
+    "Name": "13 Steps",
+    "Definition": "Doneness criteria from Fidelity case study.",
+    "Note": "internal"
+}
+{
+    "Name": "Above and Beyond",
+    "Definition": "great work - more than anyone expected",
+    "Note": ""
+}
+{
+    "Name": "ABP",
+    "Definition": "Aggressive But Possible (estimation terminology).",
+    "Note": "",
+    "Related": [ "Estimation Tool" ]
+}
+{
+    "Name": "Accountability",
+    "Definition": "Responsible for completing or overseeing the completion of a certain task, activity or project.  Same as ",
+    "Note": ""
+}
+{
+    "Name": "Action Step",
+    "Definition": "the result of a specific post-RIP session designed to draw them out",
+    "Note": ""
+}
+{
+    "Name": "ADL",
+    "Definition": "Account Delivery Lead",
+    "Note": "Responsible for all project work for all brands, account P&L, budgets and quality of deliverables."
+}
+{
+    "Name": "Agile Programming",
+    "Definition": "fix this",
+    "Note": "internal"
+}
+{
+    "Name": "AM",
+    "Definition": "Account Manager",
+    "Note": ""
+}
+{
+    "Name": "AOR",
+    "Definition": "Agency Of Record",
+    "Note": "Type of contract"
+}
+{
+    "Name": "AP",
+    "Definition": "Accounts Payable",
+    "Note": ""
+}
+{
+    "Name": "APICS",
+    "Definition": "American Production and Inventory Control Society ",
+    "Note": ""
+}
+{
+    "Name": "APM",
+    "Definition": "Assistant Project Manager",
+    "Note": ""
+}
+{
+    "Name": "APP",
+    "Definition": "Application",
+    "Note": ""
+}
+{
+    "Name": "Arch",
+    "Definition": "Architect",
+    "Note": "internal"
+}
+{
+    "Name": "Architect",
+    "Definition": "Responsible for the system architecture and the technical design.",
+    "Note": ""
+}
+{
+    "Name": "Asset",
+    "Definition": "Graphical Image",
+    "Note": ""
+}
+{
+    "Name": "ATL",
+    "Definition": "Above The Line Advertising",
+    "Note": "Below the line (advertising) - Wikipedia, the free encyclopedia"
+}
+{
+    "Name": "B / O",
+    "Definition": "Breakout:  Part of the workshops where the team breaks into smaller teams to work on specific objectives to be accomplished.",
+    "Note": "internal"
+}
+{
+    "Name": "B2B",
+    "Definition": "Business to Business",
+    "Note": ""
+}
+{
+    "Name": "B2B2C",
+    "Definition": "Business to Business to Customer(Consumer)",
+    "Note": ""
+}
+{
+    "Name": "B2C",
+    "Definition": "Business to Customer(Consumer)",
+    "Note": ""
+}
+{
+    "Name": "B2E",
+    "Definition": "Business to Employee",
+    "Note": ""
+}
+{
+    "Name": "Backoffice / Legacy systems",
+    "Definition": "software systems that the client uses at their site currently which the software / website we are developing for them will / may need to interact with",
+    "Note": ""
+}
+{
+    "Name": "BAL",
+    "Definition": "Business Area Lead",
+    "Note": "internal"
+}
+{
+    "Name": "BAM",
+    "Definition": "Business Affairs Manager",
+    "Note": "Responsible for undesrstand- ing any third party asset needs (photos, videos)"
+}
+{
+    "Name": "Bandwidth",
+    "Definition": "The data transfer rate of an electronic communications system.  In Sapient terms, the amount of capacity that an individual or team has to carry out a project / task.",
+    "Note": ""
+}
+{
+    "Name": "Barco",
+    "Definition": "Presentation monitor (big TV-like monitor) in each DC (usually 2 per DC), used to show powerpoint presentations to the team and clients.  History:  The first monitors were from the ",
+    "Note": ""
+}
+{
+    "Name": "Baseline",
+    "Definition": "Baseline is a logical snapshot of one or more related work products at a given point of time",
+    "Note": "internal"
+}
+{
+    "Name": "Battle Plan",
+    "Definition": "Daily approach to RIP",
+    "Note": ""
+}
+{
+    "Name": "BAU",
+    "Definition": "Business as usual",
+    "Note": ""
+}
+{
+    "Name": "BC",
+    "Definition": "Business Case",
+    "Note": ""
+}
+{
+    "Name": "BCD",
+    "Definition": "Business Context Diagram",
+    "Note": ""
+}
+{
+    "Name": "Beach",
+    "Definition": "On the bench",
+    "Note": "",
+    "Related": [ "On the Bench", "Bench" ]
+}
+{
+    "Name": "Bench",
+    "Definition": "In between projects",
+    "Note": "internal",
+    "Related": [ "Beach", "On The Bench" ]
+}
+{
+    "Name": "BHAG",
+    "Definition": "Big Hairy Audacious Goal (pronounced Be-Hag)",
+    "Note": ""
+}
+{
+    "Name": "BL",
+    "Definition": "Business Lead",
+    "Note": ""
+}
+{
+    "Name": "BLT",
+    "Definition": "Business Leadership Team",
+    "Note": "internal"
+}
+{
+    "Name": "BOLT",
+    "Definition": "Business Operations Leadership Team",
+    "Note": ""
+}
+{
+    "Name": "Bootcamp",
+    "Definition": "Sapient Start (old name)",
+    "Note": ""
+}
+{
+    "Name": "Bootcamp and Field Training",
+    "Definition": "The previous generation name for Sapient Start",
+    "Note": "internal"
+}
+{
+    "Name": "Boxlight",
+    "Definition": "a portable projector unit that can be hooked up to a laptop",
+    "Note": ""
+}
+{
+    "Name": "BPS",
+    "Definition": "Basis Points",
+    "Note": ""
+}
+{
+    "Name": "Branding",
+    "Definition": "Every point of contact with a customer is consistent; a common voice",
+    "Note": ""
+}
+{
+    "Name": "BRD",
+    "Definition": "business req def",
+    "Note": ""
+}
+{
+    "Name": "Breakout",
+    "Definition": "little room in a DC",
+    "Note": ""
+}
+{
+    "Name": "Brief",
+    "Definition": "Definition of what the client biz wants to achive",
+    "Note": ""
+}
+{
+    "Name": "Browser",
+    "Definition": "A software program that enables you to view pages of text and graphics on the Web.",
+    "Note": ""
+}
+{
+    "Name": "BTL",
+    "Definition": "Brand Technical Lead",
+    "Note": "SN"
+}
+{
+    "Name": "BU",
+    "Definition": "Business Unit",
+    "Note": ""
+}
+{
+    "Name": "Bucket",
+    "Definition": "category",
+    "Note": ""
+}
+{
+    "Name": "Bug Bug",
+    "Definition": "A reminder",
+    "Note": ""
+}
+{
+    "Name": "Buy-in",
+    "Definition": "Agreement to move forward on a given subject / project.  Similar terms used: ",
+    "Note": ""
+}
+{
+    "Name": "C-level",
+    "Definition": "Senior corporate executives - CEOs, COOs, CFOs etc.",
+    "Note": ""
+}
+{
+    "Name": "CAGR",
+    "Definition": "Compound annual growth rate",
+    "Note": ""
+}
+{
+    "Name": "Casting",
+    "Definition": "See Also: Staffing",
+    "Note": ""
+}
+{
+    "Name": "CC",
+    "Definition": "Configuration Controller (CC) is a key role played part time or full time (depending on the size of the project) to maintain the integrity of the Configuration Management process on the project",
+    "Note": "internal"
+}
+{
+    "Name": "CC",
+    "Definition": "Constant Currency",
+    "Note": ""
+}
+{
+    "Name": "CCB",
+    "Definition": "Change Control Board (CCB) is a group designated on a project to approve Change Requests (CRs) for Configuration Items and for Scope Changes",
+    "Note": "internal"
+}
+{
+    "Name": "CCC",
+    "Definition": "Commerce Content and Collaboration",
+    "Note": ""
+}
+{
+    "Name": "CCO",
+    "Definition": "Chief Creative Officer",
+    "Note": ""
+}
+{
+    "Name": "CDM",
+    "Definition": "Creative Delivery Manager",
+    "Note": "Responsible for the brand P&L, budget, and overall delivery."
+}
+{
+    "Name": "CDP",
+    "Definition": "Career Development Plan",
+    "Note": ""
+}
+{
+    "Name": "CDS",
+    "Definition": "Content Delivery System",
+    "Note": ""
+}
+{
+    "Name": "CE",
+    "Definition": "Client Executive",
+    "Note": ""
+}
+{
+    "Name": "CEO",
+    "Definition": "Chief Executive Officer",
+    "Note": ""
+}
+{
+    "Name": "CEP",
+    "Definition": "Consumer Engagement Platform",
+    "Note": ""
+}
+{
+    "Name": "CEP",
+    "Definition": "Consumer Engagement Practice",
+    "Note": ""
+}
+{
+    "Name": "CEPRL",
+    "Definition": "Consumer Engagement Practice Regional Lead",
+    "Note": ""
+}
+{
+    "Name": "CET",
+    "Definition": "Contractor Engagement Team",
+    "Note": ""
+}
+{
+    "Name": "CFO",
+    "Definition": "Chief Financial Officer",
+    "Note": ""
+}
+{
+    "Name": "CFP",
+    "Definition": "Coaching For Performance",
+    "Note": ""
+}
+{
+    "Name": "Checkpoint",
+    "Definition": "Checking in with the team after a breakout session.",
+    "Note": ""
+}
+{
+    "Name": "CI",
+    "Definition": "Configuration Item (CI) is a key work product that will be managed and controlled during the project. Project Plan, Scope Matrix, Design Documents, Test Plans and Code are all examples of CIs.",
+    "Note": "internal"
+}
+{
+    "Name": "CI",
+    "Definition": "Continuous Integration",
+    "Note": "internal"
+}
+{
+    "Name": "CIO",
+    "Definition": "Chief Information Officer",
+    "Note": ""
+}
+{
+    "Name": "client proxy",
+    "Definition": "",
+    "Note": "internal"
+}
+{
+    "Name": "CLM",
+    "Definition": "career limiting move",
+    "Note": ""
+}
+{
+    "Name": "closure activity",
+    "Definition": "Either conducting a formal internal debrief or completing a formal project case study OR Archiving all relevant project artefacts in ResultSpace",
+    "Note": "internal"
+}
+{
+    "Name": "Cluster",
+    "Definition": "Network of confusion / something screwed up.",
+    "Note": ""
+}
+{
+    "Name": "CM",
+    "Definition": "configuration mgt: helps a project maintain its documents and software in a controlled and consistent manner. Key elements of the process include using a version control tool with a well-defined directory structure and employing a change request and approval process for important project artefacts",
+    "Note": "internal"
+}
+{
+    "Name": "CMM",
+    "Definition": "Capability Maturity Model: assess the effectiveness of a software development processes on a scale from 1 (utter chaos) to 5 (continuously improving). (...) developed by the Software Engineering Institute (SEI). (...) Today many U.S. government agencies in addition to the DoD insist that companies that bid for their business obtain at least a CMM Level 3 assessment—meaning the development organization has a codified, repeatable process for an entire division or company. see http: / /www.cio.com / archive / 030104 / cmm.html ",
+    "Note": "internal"
+}
+{
+    "Name": "CMMI",
+    "Definition": "CMM Integration",
+    "Note": "internal"
+}
+{
+    "Name": "CMP",
+    "Definition": "Content Monetization Platform",
+    "Note": ""
+}
+{
+    "Name": "CMS",
+    "Definition": "Content Management System",
+    "Note": ""
+}
+{
+    "Name": "CMT",
+    "Definition": "Chief Marketing Technologist",
+    "Note": ""
+}
+{
+    "Name": "CMTO",
+    "Definition": "Chief Marketing Technology Officer",
+    "Note": ""
+}
+{
+    "Name": "CoB",
+    "Definition": "Close of Business",
+    "Note": ""
+}
+{
+    "Name": "Coffee Boy",
+    "Definition": "When you have been on a team long enough and you are sick of introducing yourself to new team members and clients, so instead of giving your role as engineer or architect, you become the ",
+    "Note": ""
+}
+{
+    "Name": "Consensus",
+    "Definition": "See ",
+    "Note": ""
+}
+{
+    "Name": "COO",
+    "Definition": "Chief Operating Officer",
+    "Note": ""
+}
+{
+    "Name": "Core Values",
+    "Definition": "The five values, which guide our actions and decisions: Delivery, Creativity, People Growth, Openness, Leadership, and Relationships.",
+    "Note": ""
+}
+{
+    "Name": "COTS",
+    "Definition": "commercial off the shelf software",
+    "Note": ""
+}
+{
+    "Name": "CP",
+    "Definition": "Contribution Profit",
+    "Note": ""
+}
+{
+    "Name": "CR",
+    "Definition": "Change Requests",
+    "Note": "internal"
+}
+{
+    "Name": "CR",
+    "Definition": "Change Request",
+    "Note": "See also SCO",
+    "Related": ["SCO"]
+}
+{
+    "Name": "Cranky Dave",
+    "Definition": "A pencil sharpener",
+    "Note": ""
+}
+{
+    "Name": "CSFs",
+    "Definition": "Critical Success Factors",
+    "Note": ""
+}
+{
+    "Name": "CT",
+    "Definition": "Creative Team",
+    "Note": "Responsible for producing design system inline with requirments outlined in project brief, and scope matrix."
+}
+{
+    "Name": "CX",
+    "Definition": "Customer Experience",
+    "Note": ""
+}
+{
+    "Name": "CX",
+    "Definition": "Customer Experience",
+    "Note": ""
+}
+{
+    "Name": "CXM / CEM",
+    "Definition": "Customer Experience Management",
+    "Note": ""
+}
+{
+    "Name": "DAM",
+    "Definition": "Delivered As Margin",
+    "Note": ""
+}
+{
+    "Name": "DAM",
+    "Definition": "Digital Asset Management",
+    "Note": ""
+}
+{
+    "Name": "DAT",
+    "Definition": "Deal Assistance Team / Deal Administration Team",
+    "Note": ""
+}
+{
+    "Name": "Dav",
+    "Definition": "Tthe Davenport office",
+    "Note": ""
+}
+{
+    "Name": "DBS",
+    "Definition": "Digital Business Strategy",
+    "Note": ""
+}
+{
+    "Name": "DC",
+    "Definition": "Design Center",
+    "Note": ""
+}
+{
+    "Name": "DCD",
+    "Definition": "Director of Creative Delivery",
+    "Note": ""
+}
+{
+    "Name": "DDA",
+    "Definition": "Design Direction Approval",
+    "Note": ""
+}
+{
+    "Name": "defect",
+    "Definition": "",
+    "Note": "internal"
+}
+{
+    "Name": "Dependencies",
+    "Definition": "In planning and risk management, a relationship among task and activities, where one task or activities must take place before another can occur.",
+    "Note": ""
+}
+{
+    "Name": "DEV",
+    "Definition": "Development",
+    "Note": ""
+}
+{
+    "Name": "DFA",
+    "Definition": "Delivery Focus Areas",
+    "Note": ""
+}
+{
+    "Name": "DIR",
+    "Definition": "Director",
+    "Note": ""
+}
+{
+    "Name": "Disney Effect",
+    "Definition": "The time between a breakout and checkpoint during a workshop when the team is running around pulling everything together and is completely transparent and seamless to the client (e.g., getting the presentations up and ready on the barcos, prepping the client presenter, Visio  overheads ready to go)",
+    "Note": ".0"
+}
+{
+    "Name": "DIT",
+    "Definition": "Design, Implement, Test",
+    "Note": ""
+}
+{
+    "Name": "DIT",
+    "Definition": "Design Implement Test",
+    "Note": ""
+}
+{
+    "Name": "DIT Board",
+    "Definition": "Design, Implement, Test Board",
+    "Note": ""
+}
+{
+    "Name": "DKE",
+    "Definition": "digital knowledge exchange",
+    "Note": ""
+}
+{
+    "Name": "DL",
+    "Definition": "Delivery Lead, or in Microsoft Outlook email - 'Distribution list'",
+    "Note": ""
+}
+{
+    "Name": "DMP",
+    "Definition": "Digital Marketing Platform",
+    "Note": ""
+}
+{
+    "Name": "DNE",
+    "Definition": "Do Not Erase",
+    "Note": "internal"
+}
+{
+    "Name": "DNE",
+    "Definition": "Do not erase",
+    "Note": ""
+}
+{
+    "Name": "Do what makes sense",
+    "Definition": "The one guideline which trumps all other rules",
+    "Note": ""
+}
+{
+    "Name": "DoA",
+    "Definition": "Director of Architecture",
+    "Note": ""
+}
+{
+    "Name": "DoCR",
+    "Definition": "Director of Client Relations",
+    "Note": ""
+}
+{
+    "Name": "DoD",
+    "Definition": "Director of Delivery",
+    "Note": ""
+}
+{
+    "Name": "DOPM",
+    "Definition": "Director of Project Management",
+    "Note": ""
+}
+{
+    "Name": "DoR",
+    "Definition": "Director of Relationships",
+    "Note": ""
+}
+{
+    "Name": "DoT",
+    "Definition": "Director of Technology",
+    "Note": ""
+}
+{
+    "Name": "Drive to closure",
+    "Definition": "Attempt to get a commitment, or next steps, or agreement on a particular subject so that it is ",
+    "Note": ""
+}
+{
+    "Name": "Drive-by (or fly-by)",
+    "Definition": "To walk from breakout to breakout to review material on whiteboards (used during workshops, design and checkpoints, etc.).",
+    "Note": ""
+}
+{
+    "Name": "Drivers",
+    "Definition": "Things that are ",
+    "Note": ""
+}
+{
+    "Name": "DSC",
+    "Definition": "Digital Supply Chain (may hear this term used within the manufacturing vertical).",
+    "Note": ""
+}
+{
+    "Name": "DSO",
+    "Definition": "Days Sales Outstanding",
+    "Note": ""
+}
+{
+    "Name": "DSS",
+    "Definition": "Decision Support Services",
+    "Note": ""
+}
+{
+    "Name": "DSS",
+    "Definition": "Delivery Shared Service",
+    "Note": ""
+}
+{
+    "Name": "DUS",
+    "Definition": "Duesseldorf",
+    "Note": "Germany"
+}
+{
+    "Name": "EAI",
+    "Definition": "Enterprise Applications Integration",
+    "Note": ""
+}
+{
+    "Name": "EAP",
+    "Definition": "Enterprise Architecture Planning",
+    "Note": ""
+}
+{
+    "Name": "EAT",
+    "Definition": "Enterprise Application Team",
+    "Note": ""
+}
+{
+    "Name": "ECD",
+    "Definition": "Executive Creative Director",
+    "Note": ""
+}
+{
+    "Name": "EDAM",
+    "Definition": "Expected Delivered As Margin",
+    "Note": ""
+}
+{
+    "Name": "EL",
+    "Definition": "Engagement Leader",
+    "Note": "internal"
+}
+{
+    "Name": "EoD",
+    "Definition": "End of Day",
+    "Note": ""
+}
+{
+    "Name": "EOM",
+    "Definition": "End of Month",
+    "Note": ""
+}
+{
+    "Name": "EOY",
+    "Definition": "End of Year",
+    "Note": ""
+}
+{
+    "Name": "Erosion",
+    "Definition": "DAM $ -  SAM $",
+    "Note": ""
+}
+{
+    "Name": "ERP",
+    "Definition": "Enterprise Resource Planning",
+    "Note": ""
+}
+{
+    "Name": "ESP",
+    "Definition": "Executive Support Personnel",
+    "Note": ""
+}
+{
+    "Name": "ESPP",
+    "Definition": "Employee Stock Purchase Plan",
+    "Note": ""
+}
+{
+    "Name": "Estimation Tool",
+    "Definition": "A tool used to predict chance of completion of a tool in a given amount of time"
+}
+{
+    "Name": "ETC",
+    "Definition": "estimated time to complete",
+    "Note": ""
+}
+{
+    "Name": "ETC",
+    "Definition": "Estimate To Complete: Actual effort expended and the Estimate To Complete (ETC) each story step must be captured daily.  Actual and ETC data must be tracked in hours with the smallest increment being 0.5 hours.",
+    "Note": "internal"
+}
+{
+    "Name": "Exit Criteria",
+    "Definition": "Items / tasks that you need to accomplish before moving on to the next phase or task.",
+    "Note": ""
+}
+{
+    "Name": "expo a board",
+    "Definition": "clean board with expo",
+    "Note": ""
+}
+{
+    "Name": "Extranet",
+    "Definition": "A secured website in which you need a password and have to be authenticated to gain access.",
+    "Note": ""
+}
+{
+    "Name": "Facilitator",
+    "Definition": "Responsible for facilitating a RIP or workshop.  ",
+    "Note": ""
+}
+{
+    "Name": "Fancy Pants",
+    "Definition": "a term coined on the mcsys, first health teams for ",
+    "Note": ""
+}
+{
+    "Name": "FAQ",
+    "Definition": "Frequently Asked Question",
+    "Note": ""
+}
+{
+    "Name": "feature",
+    "Definition": "a service that the system provides to fulfil one or more stakeholder needs",
+    "Note": "internal"
+}
+{
+    "Name": "Feedback",
+    "Definition": "The cornerstone of Openness at Sapient.  Sharing your impressions of anything is highly valued and will constantly be solicited.",
+    "Note": ""
+}
+{
+    "Name": "fishbowl",
+    "Definition": "a conference room with glass windows",
+    "Note": ""
+}
+{
+    "Name": "FLAB",
+    "Definition": "Finance Legal and Benefits",
+    "Note": ""
+}
+{
+    "Name": "front-end",
+    "Definition": "user-centered",
+    "Note": ""
+}
+{
+    "Name": "FS",
+    "Definition": "Financial Sector",
+    "Note": ""
+}
+{
+    "Name": "FS",
+    "Definition": "feaseability study",
+    "Note": ""
+}
+{
+    "Name": "FT / FP",
+    "Definition": "fixed time / fixed price",
+    "Note": "internal"
+}
+{
+    "Name": "FTE",
+    "Definition": "full time equivalent",
+    "Note": ""
+}
+{
+    "Name": "FTFP",
+    "Definition": "Fixed Time Fixed Price",
+    "Note": "Type of contract"
+}
+{
+    "Name": "FUDs",
+    "Definition": "Fears, Uncertainties, or Doubts",
+    "Note": ""
+}
+{
+    "Name": "FVS",
+    "Definition": "Functional Verification Scripts (end to end scenario script to verify the finality)",
+    "Note": ""
+}
+{
+    "Name": "GA",
+    "Definition": "General Administration",
+    "Note": ""
+}
+{
+    "Name": "GAD",
+    "Definition": "Group Account Director",
+    "Note": ""
+}
+{
+    "Name": "GDD",
+    "Definition": "Global Distributed Delivery",
+    "Note": ""
+}
+{
+    "Name": "GDS",
+    "Definition": "Global Distributed Support",
+    "Note": ""
+}
+{
+    "Name": "giddy-up",
+    "Definition": "let's do it now",
+    "Note": ""
+}
+{
+    "Name": "GIT",
+    "Definition": "distributed version control system",
+    "Note": ""
+}
+{
+    "Name": "GM",
+    "Definition": "Gross Margin = DAM",
+    "Note": ""
+}
+{
+    "Name": "GMO",
+    "Definition": "General Merchandise Online",
+    "Note": ""
+}
+{
+    "Name": "GOTS",
+    "Definition": "government off the shelf software",
+    "Note": ""
+}
+{
+    "Name": "GPM",
+    "Definition": "Global People Movement",
+    "Note": ""
+}
+{
+    "Name": "GPM",
+    "Definition": "Global People Movement ",
+    "Note": ""
+}
+{
+    "Name": "growth opportunity",
+    "Definition": "a task given to someone who has not done it before, when delivered with a sarcastic tone it often implies that the task is less than desirable",
+    "Note": ""
+}
+{
+    "Name": "GSS",
+    "Definition": "Global Shared Service",
+    "Note": ""
+}
+{
+    "Name": "GTD",
+    "Definition": "Get Together Duesseldorf",
+    "Note": "Germany"
+}
+{
+    "Name": "GUI",
+    "Definition": "Graphical User Interface (pronounced gooey)",
+    "Note": ""
+}
+{
+    "Name": "Halsey",
+    "Definition": "T. Squares - to draw lines easily",
+    "Note": ""
+}
+{
+    "Name": "HLP",
+    "Definition": "High Level Plan",
+    "Note": ""
+}
+{
+    "Name": "HLR",
+    "Definition": "high level req",
+    "Note": ""
+}
+{
+    "Name": "Home Page",
+    "Definition": "The ",
+    "Note": ""
+}
+{
+    "Name": "HP",
+    "Definition": "Highly Probable (estimation terminology).",
+    "Note": "",
+    "Related": [ "Estimation Tool" ]
+}
+{
+    "Name": "HRIS",
+    "Definition": "Human Resources Information System",
+    "Note": ""
+}
+{
+    "Name": "HTML",
+    "Definition": "Hyper Text Mark-Up Language",
+    "Note": ""
+}
+{
+    "Name": "IA",
+    "Definition": "Information Architect",
+    "Note": ""
+}
+{
+    "Name": "ICE",
+    "Definition": "Innovate, Communicate and Educate - internal team ",
+    "Note": ""
+}
+{
+    "Name": "IDL",
+    "Definition": "Integrated Delivery Lead",
+    "Note": ""
+}
+{
+    "Name": "IEF",
+    "Definition": "Idea Engineering Formula",
+    "Note": ""
+}
+{
+    "Name": "IEL",
+    "Definition": "integrated engagement leadership",
+    "Note": ""
+}
+{
+    "Name": "IEP",
+    "Definition": "Idea Engineer Process",
+    "Note": ""
+}
+{
+    "Name": "IET",
+    "Definition": "Idea Engineering Team",
+    "Note": ""
+}
+{
+    "Name": "IMC",
+    "Definition": "Integrated Management Consulting (was DBS)",
+    "Note": ""
+}
+{
+    "Name": "IMHO",
+    "Definition": "in my humble opinion",
+    "Note": ""
+}
+{
+    "Name": "Inputs",
+    "Definition": "Information fed into a data processing system or computer.  Also used as information that is fed into the beginning of a new phase or start of a project.",
+    "Note": ""
+}
+{
+    "Name": "Internet",
+    "Definition": "An electronic communications network that connects computer networks and organizational computer facilities around the world. ",
+    "Note": ""
+}
+{
+    "Name": "Intranet",
+    "Definition": "A company's internal website.  You have to have access to the LAN and / or WAN (behind the ",
+    "Note": ""
+}
+{
+    "Name": "iPM",
+    "Definition": "Interactive Project Manager",
+    "Note": "Responsible for managing brand specific project(s)."
+}
+{
+    "Name": "ISP",
+    "Definition": "Internet Service Provider - an organization which provides access to the Internet and / or additional services.",
+    "Note": ""
+}
+{
+    "Name": "issue",
+    "Definition": "",
+    "Note": "internal"
+}
+{
+    "Name": "Issues",
+    "Definition": "Concerns, things that are unresolved.",
+    "Note": ""
+}
+{
+    "Name": "IT",
+    "Definition": "Interface testing",
+    "Note": ""
+}
+{
+    "Name": "Iteration",
+    "Definition": "Process where we continually revisit and review work, decisions, and solutions to ensure accuracy and effectiveness.",
+    "Note": ""
+}
+{
+    "Name": "JIRA",
+    "Definition": "Project Management Tool",
+    "Note": ""
+}
+{
+    "Name": "JPMO",
+    "Definition": "joint program mgt office",
+    "Note": ""
+}
+{
+    "Name": "JSC",
+    "Definition": "joint steering committee",
+    "Note": ""
+}
+{
+    "Name": "kill",
+    "Definition": "how candidates not receiving offers are referred to",
+    "Note": "internal"
+}
+{
+    "Name": "LAU",
+    "Definition": "Launch",
+    "Note": ""
+}
+{
+    "Name": "LEM",
+    "Definition": "Lunar Excursion Module",
+    "Note": ""
+}
+{
+    "Name": "LEO",
+    "Definition": "level-of-effort ",
+    "Note": "internal"
+}
+{
+    "Name": "leverage",
+    "Definition": " using your strengths to gain an advantage",
+    "Note": ""
+}
+{
+    "Name": "LFA",
+    "Definition": "Legal Final Approval",
+    "Note": ""
+}
+{
+    "Name": "Lfac",
+    "Definition": "Lead Facilitator",
+    "Note": "internal"
+}
+{
+    "Name": "Links",
+    "Definition": "Connections from one page to another.  You can find a link on a web page by looking for one or more words highlighted with color, underlining or both.  Images and icons also can be links.",
+    "Note": ""
+}
+{
+    "Name": "llama",
+    "Definition": "a person who has done something dumb",
+    "Note": ""
+}
+{
+    "Name": "LLP",
+    "Definition": " Acronym for Low Level Plan. Every Sapient team member maintains a low level plan which lists their target tasks in a rolling two week window. This practice makes every team member proactive in scheduling meetings ahead of time and allows them to move future tasks up when a current task is delayed. In this way, no one is ever sitting around waiting for anyone or anything, because there is always a two week long list of things you could be working on. This tool is used by team members to estimate their tracking to this plan against the MLP, where they are either X days ahead or X days behind or 'OnTrack'. The LLP is also updated as part of the Microschedule? step in the Steps of Completion or Doneness. \n",
+    "Note": ""
+}
+{
+    "Name": "LOA",
+    "Definition": "Leave of Absence",
+    "Note": ""
+}
+{
+    "Name": "LOE",
+    "Definition": "Level of effort",
+    "Note": ""
+}
+{
+    "Name": "LOE",
+    "Definition": "Level of Effort",
+    "Note": ""
+}
+{
+    "Name": "LS",
+    "Definition": "Local Services",
+    "Note": ""
+}
+{
+    "Name": "MCCL",
+    "Definition": "Master Client Content List",
+    "Note": ""
+}
+{
+    "Name": "MDP",
+    "Definition": "Mid-level Development Plan",
+    "Note": ""
+}
+{
+    "Name": "MEC",
+    "Definition": "Media Entertainment Communications",
+    "Note": ""
+}
+{
+    "Name": "MFN",
+    "Definition": "Most Favoured Nation (clause)",
+    "Note": ""
+}
+{
+    "Name": "MKTG",
+    "Definition": "Marketing",
+    "Note": ""
+}
+{
+    "Name": "MLP",
+    "Definition": "Mid Level Plan",
+    "Note": ""
+}
+{
+    "Name": "MMA",
+    "Definition": "Metrics, Measurement and Analysis",
+    "Note": ""
+}
+{
+    "Name": "MRD",
+    "Definition": "Manufacturing Retail Distribution",
+    "Note": ""
+}
+{
+    "Name": "MSA",
+    "Definition": "Master Service Agreement",
+    "Note": "Type of contract"
+}
+{
+    "Name": "MSL",
+    "Definition": "Marketing Service Line",
+    "Note": ""
+}
+{
+    "Name": "MSO",
+    "Definition": "Managed Service Organization",
+    "Note": ""
+}
+{
+    "Name": "MUC",
+    "Definition": "Munich",
+    "Note": "Germany"
+}
+{
+    "Name": "NBH",
+    "Definition": "Non Billable Hours",
+    "Note": ""
+}
+{
+    "Name": "NDA",
+    "Definition": "Non Disclosure Agreement",
+    "Note": ""
+}
+{
+    "Name": "Newbies",
+    "Definition": "New hires at Sapient.  Varies how long term is applied but generally not beyond 6-months.",
+    "Note": ""
+}
+{
+    "Name": "Next Steps",
+    "Definition": "The action items that need to happen next in order to accomplish an objective.",
+    "Note": ""
+}
+{
+    "Name": "NT",
+    "Definition": "Note-taker",
+    "Note": ""
+}
+{
+    "Name": "OAUG",
+    "Definition": "Oracle Applications Users Group",
+    "Note": ""
+}
+{
+    "Name": "Offline",
+    "Definition": "speak privately",
+    "Note": ""
+}
+{
+    "Name": "offsite",
+    "Definition": "a meeting either outside the office (or at a Sapient site) for a group of employees to discuss their role, plans for the future etc.",
+    "Note": ""
+}
+{
+    "Name": "OLA",
+    "Definition": "Online Advertising, also known as banner ads / display ads",
+    "Note": "Type of contract"
+}
+{
+    "Name": "Old-bies",
+    "Definition": "follows from newbies, but those who have been around longer",
+    "Note": ""
+}
+{
+    "Name": "OLT",
+    "Definition": "Operations Leader Team",
+    "Note": ""
+}
+{
+    "Name": "On Board",
+    "Definition": "See ",
+    "Note": ""
+}
+{
+    "Name": "On the Bench",
+    "Definition": "Time when you are not assigned to a project or between projects.",
+    "Note": "internal",
+    "Related": [ "Bench", "Beach" ]
+}
+{
+    "Name": "On the Same Page",
+    "Definition": "Refers to the virtual / proverbial ",
+    "Note": ""
+}
+{
+    "Name": "One Team",
+    "Definition": "an approach to selling, resourcing and executing complex multi-disciplinary projects",
+    "Note": ""
+}
+{
+    "Name": "OO",
+    "Definition": "Object Orientation",
+    "Note": ""
+}
+{
+    "Name": "OOP",
+    "Definition": "Object Orientation Programming",
+    "Note": ""
+}
+{
+    "Name": "OPS",
+    "Definition": "Operations Team",
+    "Note": ""
+}
+{
+    "Name": "OTA",
+    "Definition": "One Team Approach",
+    "Note": ""
+}
+{
+    "Name": "OTM",
+    "Definition": "One Team Methodology",
+    "Note": ""
+}
+{
+    "Name": "OTM / OTA",
+    "Definition": "One Team Methodology",
+    "Note": ""
+}
+{
+    "Name": "outlook",
+    "Definition": "send an e-mail invitation",
+    "Note": ""
+}
+{
+    "Name": "Outputs",
+    "Definition": "The information produced by a computer.  Also, information produced at the end of a phase or end of a project.",
+    "Note": ""
+}
+{
+    "Name": "Owner",
+    "Definition": "Someone who is responsible for a given task or project, not to be confused as meaning the person that does all the work. ",
+    "Note": ""
+}
+{
+    "Name": "Owner Scope",
+    "Definition": "The combined size, duration, and sometimes intensity of a project. Usually used to define what's ",
+    "Note": ""
+}
+{
+    "Name": "Ownership",
+    "Definition": "See ",
+    "Note": ""
+}
+{
+    "Name": "P&L",
+    "Definition": "Profit & Loss",
+    "Note": ""
+}
+{
+    "Name": "PC Recorder",
+    "Definition": "Captures information on the PC using powerpoint, visio, tracker, word and excel that is written on the whiteboard.",
+    "Note": ""
+}
+{
+    "Name": "PDL",
+    "Definition": "Portfolio Delivery Lead",
+    "Note": ""
+}
+{
+    "Name": "PDL",
+    "Definition": "Portfolio Delivery Lead",
+    "Note": ""
+}
+{
+    "Name": "PDMIC",
+    "Definition": "Product Data Management Information Center",
+    "Note": ""
+}
+{
+    "Name": "PDR",
+    "Definition": "Project daily rate",
+    "Note": ""
+}
+{
+    "Name": "pebkac",
+    "Definition": "problem exists between keyboard and chair.  Most often used as a resolution to production issues discovered by clients",
+    "Note": "internal"
+}
+{
+    "Name": "pedestal",
+    "Definition": "mobile filing cabinet to hold a Sapient employee's belongings, often seen being pushed down hallways in mass",
+    "Note": "internal"
+}
+{
+    "Name": "PGM",
+    "Definition": "Program Manager",
+    "Note": "internal"
+}
+{
+    "Name": "phases",
+    "Definition": "Proposal, Fusion, Design, Implementation, or REAP",
+    "Note": "internal"
+}
+{
+    "Name": "PID",
+    "Definition": "Project Identifier",
+    "Note": ""
+}
+{
+    "Name": "PIM",
+    "Definition": "Product Information Manager",
+    "Note": ""
+}
+{
+    "Name": "PIP",
+    "Definition": "Performance Improvement Plan",
+    "Note": ""
+}
+{
+    "Name": "PLO",
+    "Definition": "Please leave on",
+    "Note": ""
+}
+{
+    "Name": "Plus / Delta feedback",
+    "Definition": "advantage / disadvantage; + / -",
+    "Note": "internal"
+}
+{
+    "Name": "PM",
+    "Definition": "Project Manager - responsible for the whole project",
+    "Note": ""
+}
+{
+    "Name": "PM",
+    "Definition": "Project Manager",
+    "Note": "internal"
+}
+{
+    "Name": "PMO",
+    "Definition": "Project Management Office",
+    "Note": ""
+}
+{
+    "Name": "PO",
+    "Definition": "purchase order",
+    "Note": ""
+}
+{
+    "Name": "PO",
+    "Definition": "Purchase Order",
+    "Note": ""
+}
+{
+    "Name": "POC",
+    "Definition": "Point of Contact | Proof of Concept",
+    "Note": ""
+}
+{
+    "Name": "POCUMO",
+    "Definition": "Post Cutover Milestone",
+    "Note": ""
+}
+{
+    "Name": "POD",
+    "Definition": "Purpose, Objectives and Deliverable",
+    "Note": ""
+}
+{
+    "Name": "POH",
+    "Definition": "People on hold ",
+    "Note": ""
+}
+{
+    "Name": "Position Statement",
+    "Definition": "Includes Audience, Category, Value Proposition, Differentiation, and Proof Points.",
+    "Note": ""
+}
+{
+    "Name": "PPG",
+    "Definition": "People Performance Growth",
+    "Note": ""
+}
+{
+    "Name": "Pres / Prez",
+    "Definition": "Powerpoint presentation",
+    "Note": "internal"
+}
+{
+    "Name": "Price the Scope",
+    "Definition": "Find the estimate and price for a defined scope",
+    "Note": ""
+}
+{
+    "Name": "Profit",
+    "Definition": "= SAM $ = Sold as Margin in USD",
+    "Note": ""
+}
+{
+    "Name": "Program Management",
+    "Definition": "aka Engagement Leadership: focuses on the high-level leadership and account management skills required to engage strategically and tactically with our clients at the executive level",
+    "Note": "internal"
+}
+{
+    "Name": "project",
+    "Definition": "any client engagement or sales pursuit that meets all of the following criteria:\n• Services revenue is USD $50,000 or more -Duration is three weeks or longer -Team size is three or more people",
+    "Note": "internal"
+}
+{
+    "Name": "Project Adventure Week",
+    "Definition": "Development Program for engineer training",
+    "Note": ""
+}
+{
+    "Name": "PS",
+    "Definition": "People Success",
+    "Note": ""
+}
+{
+    "Name": "PSA",
+    "Definition": "Project Service Agreement",
+    "Note": "Type of contract"
+}
+{
+    "Name": "PSO",
+    "Definition": "People Strategy Organization",
+    "Note": "internal"
+}
+{
+    "Name": "PUP",
+    "Definition": "Process Usage Plan: defines the S|A processes that will be followed by the team",
+    "Note": "internal"
+}
+{
+    "Name": "Push Back",
+    "Definition": "Speak up. Let people know if you disagree, or if you are not able to accept something they are suggesting or asking of you. Pushing back is especially effective and helpful if it happens early on.  ",
+    "Note": "internal"
+}
+{
+    "Name": "Pyramid",
+    "Definition": "Database that stores information about each employee in regards to their skills, experience, preferences and basic information (role, phone number, etc.).  It is used during resource meetings to staff projects.",
+    "Note": "internal"
+}
+{
+    "Name": "QA",
+    "Definition": "quality assurance",
+    "Note": "internal"
+}
+{
+    "Name": "QA",
+    "Definition": "Quality Assurance",
+    "Note": ""
+}
+{
+    "Name": "QFA",
+    "Definition": "Quadd Focus Areas",
+    "Note": ""
+}
+{
+    "Name": "QUADD",
+    "Definition": "Quality Design Delivery",
+    "Note": ""
+}
+{
+    "Name": "Quality Plan",
+    "Definition": "outlines all types of reviews that will be conducted during the phase",
+    "Note": "internal"
+}
+{
+    "Name": "Quickstart",
+    "Definition": "Quick ramp-up of workshop (e.g., business / industry context, facilitation skills, any other skills required for project)",
+    "Note": ""
+}
+{
+    "Name": "R",
+    "Definition": "Relationship Owner, Business Development who owns client relation",
+    "Note": ""
+}
+{
+    "Name": "RACI",
+    "Definition": "responsible, accountative, consultative, informative - refers to the level of communication necessary with an employee to get tasks accomplished",
+    "Note": ""
+}
+{
+    "Name": "RACI",
+    "Definition": "Responsible, Accountable, Consulted, Informed",
+    "Note": ""
+}
+{
+    "Name": "Ramp up",
+    "Definition": "The process of becoming well-versed in any given project or technology.",
+    "Note": ""
+}
+{
+    "Name": "RASIC",
+    "Definition": "Responsible, Accountable, Support, Informed, Consulted",
+    "Note": "MSL specific (See also RACI in ALL)",
+    "Related" : ["RACI"]
+}
+{
+    "Name": "RD",
+    "Definition": "Relationship Developer",
+    "Note": "internal"
+}
+{
+    "Name": "RDL",
+    "Definition": "Regional Delivery Lead",
+    "Note": "Responsible for all project work for all brands, account P&L, budgets and quality of deliverables."
+}
+{
+    "Name": "release",
+    "Definition": "a formal delivery of some or all of the solution to production or the client QA environment; Releases to production or the client QA environment must occur no less frequently than every four months",
+    "Note": "internal"
+}
+{
+    "Name": "ResultSpace2",
+    "Definition": "Collaborative Software Development Tool",
+    "Note": "internal"
+}
+{
+    "Name": "Retainer",
+    "Definition": "Retainer Contract --> Wiki",
+    "Note": "Type of contract"
+}
+{
+    "Name": "REV",
+    "Definition": "Revenue",
+    "Note": ""
+}
+{
+    "Name": "RFI",
+    "Definition": "req for information",
+    "Note": ""
+}
+{
+    "Name": "RFI",
+    "Definition": "Request for Information - Request to understand our capabilities to do a type of work",
+    "Note": ""
+}
+{
+    "Name": "RFP",
+    "Definition": "request for proposal",
+    "Note": ""
+}
+{
+    "Name": "RFP",
+    "Definition": "Request for Proposal - What a client wants a vendor to do",
+    "Note": ""
+}
+{
+    "Name": "RIP",
+    "Definition": "Rapid Implementation Plan (a technology-based workshop)",
+    "Note": ""
+}
+{
+    "Name": "Ripmonger",
+    "Definition": "Someone who does RIPs",
+    "Note": ""
+}
+{
+    "Name": "risk",
+    "Definition": "",
+    "Note": "internal"
+}
+{
+    "Name": "RM",
+    "Definition": "Relationship Manager",
+    "Note": "internal"
+}
+{
+    "Name": "RM",
+    "Definition": "Relationship Manager",
+    "Note": ""
+}
+{
+    "Name": "rock star",
+    "Definition": "a kick ass candidate",
+    "Note": ""
+}
+{
+    "Name": "roll on / roll off",
+    "Definition": "to start or finish a role or project",
+    "Note": ""
+}
+{
+    "Name": "RS2",
+    "Definition": "ResultSpace 2 (Has been retired in 2013)",
+    "Note": ""
+}
+{
+    "Name": "RS3",
+    "Definition": "ResultSpace 3, being retired in 2015",
+    "Note": ""
+}
+{
+    "Name": "SA 3",
+    "Definition": "Sapient Approach 3 - The official Sapient Methodology",
+    "Note": ""
+}
+{
+    "Name": "SA3",
+    "Definition": "Sapient Approach 3",
+    "Note": ""
+}
+{
+    "Name": "SALT",
+    "Definition": "Solution Architecture Leadership Team",
+    "Note": "internal"
+}
+{
+    "Name": "SAM",
+    "Definition": "Sold As Margin",
+    "Note": ""
+}
+{
+    "Name": "SAMS",
+    "Definition": "Sapient Application Management Services",
+    "Note": ""
+}
+{
+    "Name": "Scenario",
+    "Definition": "Use case",
+    "Note": ""
+}
+{
+    "Name": "SCG",
+    "Definition": "Specialized Capabilities Group",
+    "Note": ""
+}
+{
+    "Name": "SCM",
+    "Definition": "Supply Chain Management",
+    "Note": ""
+}
+{
+    "Name": "SCM",
+    "Definition": "Software Configuration Management relates to formally defining the artifacts to be managed and controlled on a project and maintaining consistent baselines through version control for these artifacts.",
+    "Note": "internal"
+}
+{
+    "Name": "SCO",
+    "Definition": "Scope Change",
+    "Note": "See also CR",
+    "Related": ["CR"]
+}
+{
+    "Name": "Scope",
+    "Definition": "Estimating the size of a project from 3 angles:  BREADTH - what's the functionality, how broad; DEPTH - level of complexity; RESOURCES - money, time, materials, people",
+    "Note": ""
+}
+{
+    "Name": "scope",
+    "Definition": "contractual scope is captured in the scope matrix referenced by the Statement of Work",
+    "Note": "internal"
+}
+{
+    "Name": "Scope Creep",
+    "Definition": "The size (scope) of the project ",
+    "Note": ""
+}
+{
+    "Name": "Scope the Price",
+    "Definition": "Find the scope that can be delivered (with value) for the price",
+    "Note": ""
+}
+{
+    "Name": "SDD",
+    "Definition": "scope def doc",
+    "Note": ""
+}
+{
+    "Name": "SDG",
+    "Definition": "Specialized Delivery Group",
+    "Note": "Old word for SCG"
+}
+{
+    "Name": "SDL",
+    "Definition": "Service Delivery Lead",
+    "Note": "Old word for ADL / RDL"
+}
+{
+    "Name": "SDL",
+    "Definition": "Service Delivery Lead",
+    "Note": ""
+}
+{
+    "Name": "SDLC",
+    "Definition": "Software Development Lifecycle",
+    "Note": ""
+}
+{
+    "Name": "seeded / seeding",
+    "Definition": "when an individual from one discipline acts as a bridge to another discipline",
+    "Note": ""
+}
+{
+    "Name": "SEPG",
+    "Definition": "Software Engineering Process Group is the centralized group responsible for CMM vision and direction, overall process architecture, and evolution of processes. The closest equivalent at Sapient prior to our CMM initiative has been the Sapient|Approach team.",
+    "Note": "internal"
+}
+{
+    "Name": "SFDC",
+    "Definition": "salesforce.com",
+    "Note": ""
+}
+{
+    "Name": "SGM",
+    "Definition": "Sapient Global Markets",
+    "Note": ""
+}
+{
+    "Name": "SIG",
+    "Definition": "Strategy and Innovation Group.  SIG is also used as the acronym for Special Interest Group.  There are special interest groups (SIG's) within the Oracle Applications User Group (OAUG).  For example, there is a Government SIG.  Sometimes SIG's represent vertical markets but not always.  ",
+    "Note": ""
+}
+{
+    "Name": "SIT",
+    "Definition": "System Integration Testing ",
+    "Note": ""
+}
+{
+    "Name": "SLC",
+    "Definition": "Software Lifecycle",
+    "Note": ""
+}
+{
+    "Name": "SME",
+    "Definition": "Subject Matter Expert",
+    "Note": ""
+}
+{
+    "Name": "SN",
+    "Definition": "SapientNitro",
+    "Note": ""
+}
+{
+    "Name": "SNA",
+    "Definition": "SapientNitro (North) America",
+    "Note": ""
+}
+{
+    "Name": "Snake in the grass session",
+    "Definition": "session to work out frustrations or kinks",
+    "Note": "internal"
+}
+{
+    "Name": "SNEU",
+    "Definition": "SapientNitro Europe",
+    "Note": ""
+}
+{
+    "Name": "sniff test",
+    "Definition": "make sure apps haven't regressed",
+    "Note": ""
+}
+{
+    "Name": "SOR",
+    "Definition": "statement of req",
+    "Note": ""
+}
+{
+    "Name": "SOURCE",
+    "Definition": "Sapient's intranet",
+    "Note": ""
+}
+{
+    "Name": "SOW",
+    "Definition": "Statement Of Work",
+    "Note": "Type of contract"
+}
+{
+    "Name": "spam",
+    "Definition": "send junk e-mail",
+    "Note": ""
+}
+{
+    "Name": "SPOC",
+    "Definition": "Single Point of Contact",
+    "Note": ""
+}
+{
+    "Name": "SQA",
+    "Definition": "The Software Quality Assurance (SQA) is a group of auditors / coaches dedicated to ensuring process compliance throughout the BU. They are a distributed group responsible for facilitating and then measuring adoption and process compliance on a regular basis.",
+    "Note": "internal"
+}
+{
+    "Name": "STAI",
+    "Definition": "Sapient Travel Approach India",
+    "Note": ""
+}
+{
+    "Name": "Stakeholder Need",
+    "Definition": "the highest level of requirements that describe what the application should do to help improve or lower the cost of a business process, increase revenue, or meet regulatory or other obligations",
+    "Note": "internal"
+}
+{
+    "Name": "Stand Up",
+    "Definition": "a meeting where all members are standing (usually held first thing in the morning)",
+    "Note": ""
+}
+{
+    "Name": "STAR a.k.a RATS",
+    "Definition": "The previous generation prior to pyramid for sapient staffing and resource planning",
+    "Note": "internal"
+}
+{
+    "Name": "Step up",
+    "Definition": "To volunteer and take ownership of a task.",
+    "Note": "internal"
+}
+{
+    "Name": "steps of doneness",
+    "Definition": "This is the list of steps shown across the top of the Doneness Matrix and also the the list of steps used for estimation metrics. Steps of Doneness are often tailored to meet a specific track or class of deliverables",
+    "Note": ""
+}
+{
+    "Name": "storming",
+    "Definition": "getting all nerf weapons and attacking",
+    "Note": ""
+}
+{
+    "Name": "story",
+    "Definition": "the basic construct used to estimate and define work and must represent something visible and valuable to the client",
+    "Note": "internal"
+}
+{
+    "Name": "Straw man",
+    "Definition": "Rough draft or first pass. Variations: the PC version ",
+    "Note": "internal"
+}
+{
+    "Name": "Super Saturday",
+    "Definition": "College Hiring",
+    "Note": ""
+}
+{
+    "Name": "SVN",
+    "Definition": "Subversion Numbering (distributed version control system)",
+    "Note": ""
+}
+{
+    "Name": "SWAG",
+    "Definition": "Some Wild Ass Guess",
+    "Note": ""
+}
+{
+    "Name": "SWAMI",
+    "Definition": "Those mobile white boards that are on sheets.  History: this tool was introduced to us by a client named Swamirama(?), and they are called swamis in his honor.",
+    "Note": ""
+}
+{
+    "Name": "SWG",
+    "Definition": "Specialized Work Group",
+    "Note": "Old word for SCG"
+}
+{
+    "Name": "T & M",
+    "Definition": "Time and Materials",
+    "Note": ""
+}
+{
+    "Name": "T&M",
+    "Definition": "Time and Material",
+    "Note": ""
+}
+{
+    "Name": "take this offline",
+    "Definition": "discussing something informally - used when a group discussion may be better suited to a smaller number of people",
+    "Note": ""
+}
+{
+    "Name": "talk around something",
+    "Definition": "talk about",
+    "Note": ""
+}
+{
+    "Name": "TAR",
+    "Definition": "Technical Assistance Request",
+    "Note": ""
+}
+{
+    "Name": "TAR",
+    "Definition": "Technical Assistance Request: is created when a system is not working in a way consistent with specifications. Each TAR is entered into a TAR tracking tool that manages the lifecycle of that TAR as it is tracked closure. Each TAR is categorized (defects, issues, feature enhancements, etc.) and prioritised (P1 through P4) and collaboratively managed by Sapient and the client. Metrics are collected and analysed over the course of the project in order guide decisions around testing, quality, and project closure.",
+    "Note": "internal"
+}
+{
+    "Name": "TAR",
+    "Definition": "Technical Assistance Request",
+    "Note": ""
+}
+{
+    "Name": "TCD",
+    "Definition": "Topic Concept Documents",
+    "Note": ""
+}
+{
+    "Name": "TDD",
+    "Definition": "Test Driven Development",
+    "Note": "internal"
+}
+{
+    "Name": "Team Cheer",
+    "Definition": "What Sapient teams shout at the top of their lungs at the end of the morning meeting. This worked better in our own offices, but when we started working at Client Sites, it was viewed as mildly disruptive",
+    "Note": ""
+}
+{
+    "Name": "the bean",
+    "Definition": "the Java bean (coffee shop)",
+    "Note": ""
+}
+{
+    "Name": "the disney effect",
+    "Definition": "the added showmanship that is added to everything we do for clients",
+    "Note": "internal"
+}
+{
+    "Name": "The good the bad and the ugly",
+    "Definition": "A way to give the highlights of a project or other task or event.  ",
+    "Note": ""
+}
+{
+    "Name": "the interns room",
+    "Definition": "internal room in hiring",
+    "Note": ""
+}
+{
+    "Name": "TL",
+    "Definition": "Track Lead | Team Lead",
+    "Note": ""
+}
+{
+    "Name": "to ",
+    "Definition": "to record on the whiteboard or in a computer (usually meaning to take what is on a white board and put it into word, excel, ppt etc.)",
+    "Note": "internal"
+}
+{
+    "Name": "to ",
+    "Definition": "to write something on a whiteboard",
+    "Note": "internal"
+}
+{
+    "Name": "to set expectations",
+    "Definition": "",
+    "Note": ""
+}
+{
+    "Name": "TOC",
+    "Definition": "table of contents",
+    "Note": ""
+}
+{
+    "Name": "TOC",
+    "Definition": "Table of Content",
+    "Note": ""
+}
+{
+    "Name": "Tool",
+    "Definition": "play practical joke",
+    "Note": ""
+}
+{
+    "Name": "TOPS",
+    "Definition": "Technical Operations Team (previously IT team)",
+    "Note": "internal"
+}
+{
+    "Name": "Tracker Software",
+    "Definition": "a database-based system used to capture standard project items such as issues, TARs, defects, etc",
+    "Note": "internal"
+}
+{
+    "Name": "TTL",
+    "Definition": "Through The Line Advertising",
+    "Note": "Below the line (advertising) - Wikipedia, the free encyclopedia"
+}
+{
+    "Name": "UAT",
+    "Definition": "User Acceptance Testing",
+    "Note": ""
+}
+{
+    "Name": "UAT",
+    "Definition": "user acceptance test",
+    "Note": "internal"
+}
+{
+    "Name": "UAT",
+    "Definition": "User Acceptance Test ",
+    "Note": ""
+}
+{
+    "Name": "Up to Speed",
+    "Definition": "Attaining a good working knowledge of a project or technology. Example: after my first week on X project, I was up to speed on the business problem.  ",
+    "Note": ""
+}
+{
+    "Name": "URL",
+    "Definition": "Uniform Resource Locator - an ",
+    "Note": ""
+}
+{
+    "Name": "VF",
+    "Definition": "Vodafone",
+    "Note": ""
+}
+{
+    "Name": "VF D2",
+    "Definition": "Vodafone D2 - Germany",
+    "Note": ""
+}
+{
+    "Name": "VF Group",
+    "Definition": "Vodafone Global",
+    "Note": ""
+}
+{
+    "Name": "VP",
+    "Definition": "Vice President",
+    "Note": ""
+}
+{
+    "Name": "WAF",
+    "Definition": "Work Authorization Form",
+    "Note": ""
+}
+{
+    "Name": "war room",
+    "Definition": "fairly standard consulting term, used as a central place for project planning, project plan presentation, team / project metrics, team meetings, etc.",
+    "Note": ""
+}
+{
+    "Name": "Waterfall Method",
+    "Definition": "A development method whereby each step is completed before the next has begun.  For example, requirement gathering / analysis is completed and then design begins.  Often an entirely new group is brought in for each phase in the process.  The waterfall analogy comes from the image that each step is a box.  The boxes fill up and then flow into the next box.  Each step must be complete or filled up in order to move to the next, and no water can move upstream or backward through the process -thus no iteration.",
+    "Note": ""
+}
+{
+    "Name": "WBL",
+    "Definition": "Well-Balanced-Life (pronounced wibble)",
+    "Note": "internal"
+}
+{
+    "Name": "WBL Board",
+    "Definition": "A place in the team area where each team member writes one or two WBL goals and updates their WBL status weekly. Some people find it easier to make time to have a well balanced life if every one on the team is also focused on the same goal and every one is encouraging each other to do the same. \n",
+    "Note": ""
+}
+{
+    "Name": "who's driving",
+    "Definition": "who's directing that project",
+    "Note": ""
+}
+{
+    "Name": "WOPR",
+    "Definition": "War of Operations Planning Room",
+    "Note": ""
+}
+{
+    "Name": "work around",
+    "Definition": "a mitigation plan",
+    "Note": ""
+}
+{
+    "Name": "x mod",
+    "Definition": "experience modeling",
+    "Note": ""
+}
+{
+    "Name": "x wide (usually 2 or 3)",
+    "Definition": "referring to the number of breakouts needed for a workshop",
+    "Note": ""
+}
+{
+    "Name": "EYP",
+    "Definition": "Enabling Your Potential, the replacement to PPG",
+    "Note": ""
+}

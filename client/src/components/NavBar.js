@@ -4,7 +4,8 @@ import {addRoutes,navigatorFor} from 'lucid-router';
 
 addRoutes([
     {name: 'browse', path: '/'},
-    {name: 'search', path: '/search', external: false}
+    {name: 'search', path: '/search', external: false},
+    {name: 'admin', path: '/admin', external: false}
 ]);
     
 class LingoNavBar extends React.Component {
