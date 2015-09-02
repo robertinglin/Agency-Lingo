@@ -3,8 +3,9 @@ import LingoNavBar from './NavBar';
 import LingoSearchContainer from './search/SearchContainer'; 
 import LingoTable from './browse/lingo-home';
 import LingoActiveTile from './tile/ActiveTile'; 
+import LingoAdminTools from './admintools/AdminTools';
 import ExecutionEnvironment from 'react/lib/ExecutionEnvironment';
-import {register} from 'lucid-router';
+import {register,getLocation} from 'lucid-router';
 
 import termStore from '../stores/TermStore';
 
@@ -47,7 +48,7 @@ var AgencyLingo = React.createClass({
     getInitialState: function(){
 
         return {
-            route: 'browse',
+            route: ( getLocation() || {} ).name || 'browse',
             activeTerm: null,
             terms: termStore.getState().toArray()
         }
@@ -97,6 +98,7 @@ var AgencyLingo = React.createClass({
 					switch ( this.state.route ) {
 						case 'search' : return ( <LingoSearchContainer terms={this.state.terms} setActive={this.setActive} /> );
 						case 'browse' : return ( <LingoTable terms={this.state.terms} setActive={this.setActive}/> );
+                        case 'admin'  : return ( <LingoAdminTools terms={this.state.terms} setActive={this.setActive}  /> );
 					}
 				})()}
 				{ this.state.activeTerm && this.state.route === 'browse' ? 
