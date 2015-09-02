@@ -4,77 +4,75 @@ import {createStore} from 'redux';
 import Term from './Term';
 
 //Set up store.
-// type State = Immutable.MapStore<string, Term>;
-
 var State = Immutable.Map();
 
 function TermStore( state = State, action ) {
 
 
-	switch ( action.type ) {
+    switch ( action.type ) {
 
-		case 'term/load':
+        case 'term/load-complete':
 
-			return loadTerms( state, action.rawTerms );
+            return loadTerms( state, action.rawTerms );
 
-		case 'term/create':
+        case 'term/create':
 
-			return createTerm( state, action.name, action.definition, action.related );
+            return createTerm( state, action.name, action.definition, action.related );
 
-		case 'term/update-name':
+        case 'term/update-name':
 
-			return state.setIn([action.id, 'name'], action.name.trim());
+            return state.setIn([action.id, 'name'], action.name.trim());
 
-		case 'term/update-definition':
-			return state.setIn([action.id, 'definition'], action.definition.trim());
+        case 'term/update-definition':
+            return state.setIn([action.id, 'definition'], action.definition.trim());
 
-		case 'term/add-related':
-			return state.setIn([action.id, 'related'], state.getIn( [action.id, 'related'] ).push( action.related ));
+        case 'term/add-related':
+            return state.setIn([action.id, 'related'], state.getIn( [action.id, 'related'] ).push( action.related ));
 
-		case 'term/remove-related':
+        case 'term/remove-related':
 
-			return removeRelated( state, action.id, action.related );
+            return removeRelated( state, action.id, action.related );
 
-		default:
+        default:
 
-			return state;
+            return state;
 
-	}
+    }
 
 }
 
 function loadTerms( state, rawTerms ) {
 
-	for( let i = 0, len = rawTerms.length; i < len; ++i ) {
+    for( let i = 0, len = rawTerms.length; i < len; ++i ) {
 
-		state = createTerm( state, rawTerms[ i ].name, rawTerms[ i ].definition, rawTerms[ i ].related );
-	}
-	return state;
+        state = createTerm( state, rawTerms[ i ].name, rawTerms[ i ].definition, rawTerms[ i ].related );
+    }
+    return state;
 }
 
 function createTerm( state, name, definition, related ){
 
-	if( !name || !definition ) {
-		return state;
-	}
+    if( !name || !definition ) {
+        return state;
+    }
 
-	var newTerm = new Term( name, definition, related );
+    var newTerm = new Term( name, definition, related );
 
-	return state.set( newTerm.id, newTerm );
+    return state.set( newTerm.id, newTerm );
 };
 
 function removeRelated( state, id, relatedTerm ) {
 
-	var relatedTerms = state.getIn([action.id, 'related']),
-		relatedRemoveIndex = relatedTerms.indexOf( relatedTerm );
+    var relatedTerms = state.getIn([action.id, 'related']),
+        relatedRemoveIndex = relatedTerms.indexOf( relatedTerm );
 
-	if( relatedRemoveIndex > -1 ) {
+    if( relatedRemoveIndex > -1 ) {
 
-		relatedTerms.splice( relatedRemoveIndex, 1 );
+        relatedTerms.splice( relatedRemoveIndex, 1 );
 
-		return state.setIn( [action.id, 'related'], relatedTerms );
-	}
-	return state;
+        return state.setIn( [action.id, 'related'], relatedTerms );
+    }
+    return state;
 
 }
 
