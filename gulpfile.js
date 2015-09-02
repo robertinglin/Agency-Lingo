@@ -9,6 +9,7 @@ var gulpif = require('gulp-if');
 var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var browserSync = require('browser-sync').create();
+var historyApiFallback = require('connect-history-api-fallback');
 var watchify = require('watchify');
 var _ = require('lodash');
 var del = require('del');
@@ -43,7 +44,8 @@ var BROWSERIFY_BUNDLES = [{
 
 var BROWSERSYNC = {
     server: {
-        baseDir: './dist'
+        baseDir: './dist',
+        middleware: [ historyApiFallback() ]
     }
 };
 
