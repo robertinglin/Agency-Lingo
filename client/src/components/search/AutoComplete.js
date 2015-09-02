@@ -1,10 +1,11 @@
 import React from 'react';
+import LingoTile from '../tile/Tile';
 
 var LingoAutoComplete = React.createClass({
 
-	selectOption: function( event ) {
+	selectOption: function( value ) {
 		
-		this.props.onSelectOption( event.target.value );
+		this.props.onSelectOption( value );
 	},
 	
 	render: function(){
@@ -13,8 +14,9 @@ var LingoAutoComplete = React.createClass({
 			<div>
 				{this.props.autoCompleteOptions
 					.map( option => 
-						<button key={option} onClick={this.selectOption} value={option}>{option}</button>
+						 <LingoTile term={option} key={option} onClick={this.selectOption} />
 					)
+						
 				}
 			</div>
 		);
