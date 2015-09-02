@@ -24,11 +24,10 @@ class TermsDataBridge {
             client( { path :'/data/json/lingo.json' } )
                 .then( res => {
 
-                    success( res.entity );
-                    
+                    success( res.entity.terms );
+
                 })
                 .catch(function( err ){
-
                     error( err );
                 }) ;
         });
