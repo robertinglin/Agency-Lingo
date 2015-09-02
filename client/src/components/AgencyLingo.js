@@ -4,6 +4,7 @@ import LingoSearchContainer from './search/SearchContainer';
 import LingoTable from './browse/lingo-home';
 import LingoActiveTile from './tile/ActiveTile'; 
 import ExecutionEnvironment from 'react/lib/ExecutionEnvironment';
+import {register} from 'lucid-router';
 
 import termStore from '../stores/TermStore';
 
@@ -53,6 +54,8 @@ var AgencyLingo = React.createClass({
     },
 
     componentDidMount: function(){
+        register(this.routeChanged);
+
         termStore.subscribe( () => this.buildTerms() );
 
         if (ExecutionEnvironment.canUseDOM) {
@@ -63,8 +66,16 @@ var AgencyLingo = React.createClass({
         window.removeEventListener('scroll', this.handleScroll);
         termStore.unsubscribe();
     },
+
+    routeChanged: function (location){
+        console.log(location);
+        this.setState({
+            route: location.name
+        });
+
+    },
     handleScroll: function(){
-        this.setActive();        
+        this.setActive();     
     },
 	setActive: function( termName ) {
 
@@ -77,8 +88,8 @@ var AgencyLingo = React.createClass({
 	},
 
 	render: function(){
-
 		var classString = this.state.route + ' col-xs-12';
+        
 		return (
 			<div className={classString}>
 				<LingoNavBar onClick={this.routeClick} />
