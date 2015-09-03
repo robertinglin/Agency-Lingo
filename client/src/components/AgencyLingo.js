@@ -27,7 +27,7 @@ var AgencyLingo = React.createClass({
             return 1;
         }
 
-        var builtTerms = termStore.getState().toArray().sort( alphabetNameSort );
+        var builtTerms = termStore.getState().terms.toArray().sort( alphabetNameSort );
 
         this.buildLookupTable( builtTerms );
 
@@ -56,7 +56,7 @@ var AgencyLingo = React.createClass({
         return {
             route: ( getLocation() || {} ).name || 'browse',
             activeTerm: null,
-            terms: termStore.getState().toArray()
+            terms: termStore.getState().terms.toArray()
         }
     },
 
