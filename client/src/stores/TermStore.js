@@ -9,21 +9,27 @@ var State = Immutable.Map();
 function TermStore( state = State, action ) {
 
 
+            console.log( action );
     switch ( action.type ) {
 
         case 'term/load-complete':
 
             return loadTerms( state, action.rawTerms );
 
-        case 'term/create':
+        case 'term/create-complete':
 
             return createTerm( state, action.name, action.definition, action.related );
+
+        case 'term/remove-complete':
+
+            return state.removeIn([action.id]);
 
         case 'term/update-name':
 
             return state.setIn([action.id, 'name'], action.name.trim());
 
-        case 'term/update-definition':
+        case 'term/update-definition-complete':
+        
             return state.setIn([action.id, 'definition'], action.definition.trim());
 
         case 'term/add-related':
@@ -46,6 +52,7 @@ function loadTerms( state, rawTerms ) {
     for( let i = 0, len = rawTerms.length; i < len; ++i ) {
 
         state = createTerm( state, rawTerms[ i ].name, rawTerms[ i ].definition, rawTerms[ i ].related );
+
     }
     return state;
 }
