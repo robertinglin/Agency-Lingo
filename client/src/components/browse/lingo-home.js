@@ -1,6 +1,7 @@
 import React from 'react';
-
-import LingoTile from '../tile/Tile'; 
+import LingoTile from '../tile/Tile';
+import LingoNavBar from '../NavBar';
+import {addRoutes,navigatorFor} from 'lucid-router';
  
 //table for the whole thing
 var LingoTable = React.createClass({
@@ -14,7 +15,7 @@ var LingoTable = React.createClass({
 
         return (
             <div className="container">
-            
+            <div id="search" value="search" onClick={navigatorFor('/search')}>Search</div>
                 <div className="row">{
                     this.props.terms.map(term => <LingoTile term={term.name} key={term.id} onClick={this.setActive} />)
                 }</div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import LingoNavBar from './NavBar';
 import LingoSearchContainer from './search/SearchContainer'; 
 import LingoTable from './browse/lingo-home';
 import LingoActiveTile from './tile/ActiveTile'; 
@@ -69,7 +68,7 @@ var AgencyLingo = React.createClass({
     },
 
     routeChanged: function (location){
-        console.log(location);
+        console.log(location.name);
         this.setState({
             route: location.name
         });
@@ -93,7 +92,6 @@ var AgencyLingo = React.createClass({
         
 		return (
 			<div className={classString}>
-				<LingoNavBar onClick={this.routeClick} />
 				{(() => {
 					switch ( this.state.route ) {
 						case 'search' : return ( <LingoSearchContainer terms={this.state.terms} setActive={this.setActive} /> );
