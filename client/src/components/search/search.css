@@ -1,4 +1,12 @@
+.browse-button {
+	height: 200px;
+	width: 200px;
+}
 
+.wtf {
+	font-size: 160px;
+}
 .search-bar {
+	margin-top: 200px;
 	font-family: 'Merriweather', serif;
 }

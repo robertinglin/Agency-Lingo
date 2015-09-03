@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from 'react';
+import {addRoutes,navigatorFor} from 'lucid-router';
 
 // View
 var LingoSearchBar = React.createClass({
@@ -7,12 +7,16 @@ var LingoSearchBar = React.createClass({
 	render: function(){
 
 		return (
-			<h2 className="search-bar">
-				WTF <small>is </small>
+			<div className="container">
+			<div id="browse" value="browse" onClick={navigatorFor('/')}>Browse</div>
+			
+			<h2 className="search-bar jumbotron">
+				<span className="wtf">WTF</span> <small>is</small>
 				<input 
 					value={this.props.filterText}
 					onChange={this.props.onChange} />
 			</h2>
+			</div>
 		);
 	}
 });

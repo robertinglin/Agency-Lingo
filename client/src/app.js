@@ -1,8 +1,13 @@
 import React from 'react';
 import AgencyLingo from './components/AgencyLingo';
-import LingoNavBar from './components/NavBar';
-import {register,getLocation} from 'lucid-router';
+import {register,getLocation,addRoutes} from 'lucid-router';
 import {TermsLoad} from './stores/TermActions';
+
+addRoutes([
+    {name: 'browse', path: '/'},
+    {name: 'search', path: '/search', external: false},
+    {name: 'admin', path: '/admin', external: false}
+]);
 
 TermsLoad();
 
