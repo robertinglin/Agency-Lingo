@@ -1,6 +1,5 @@
 import React from 'react';
 import LingoTile from '../tile/Tile';
-import LingoNavBar from '../NavBar';
 import {addRoutes,navigatorFor} from 'lucid-router';
  
 //table for the whole thing
