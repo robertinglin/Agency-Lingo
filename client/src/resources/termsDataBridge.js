@@ -18,7 +18,7 @@ class TermsDataBridge {
                     error( res.status )
 
                 } else {
-                    
+
                     success( res.entity );
                 }
         })
@@ -33,6 +33,40 @@ class TermsDataBridge {
                     error( err );
                 }) ;
         });
+    }
+
+    saveTerm ( name, definition, related, success, usePut )  {
+
+        client( { path: 'http://127.0.0.1:7777/api/terms/' + name,
+                    method: usePut? 'PUT' : 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    entity: {
+                        definition
+                    } 
+                }).then( res=>{
+
+                    success( res );
+                });
+    }
+
+    removeTerm ( name, success ) {
+
+        client( { path: 'http://127.0.0.1:7777/api/terms/' + name,
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then( res=>{
+
+                    success( res );
+                });
+    }
+
+    editTerm ( name, definition, related, success ) {
+
+        this.saveTerm( name, definition, related, success, true );
     }
 }
 export default new TermsDataBridge();

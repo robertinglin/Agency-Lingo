@@ -20,12 +20,10 @@ var AgencyLingo = React.createClass({
 
 
         var alphabetNameSort = function( a, b ){
-            if( a.name < b.name ) {
+            if( a.name.toLowerCase() < b.name.toLowerCase() ) {
                 return -1;
-            } else if( a.name > b.name ) {
-                return 1;
             }
-            return 0;
+            return 1;
         }
 
         var builtTerms = termStore.getState().toArray().sort( alphabetNameSort );
@@ -41,8 +39,16 @@ var AgencyLingo = React.createClass({
 
         for( var i = 0; i < terms.length; ++i ) {
 
-            this.termsLookup[ terms[ i ].name ] = terms[ i ];
+            this.termsLookup[ terms[ i ].name.toLowerCase() ] = terms[ i ];
         }
+
+        console.log( Object.keys( this.termsLookup ).length );
+    },
+
+    getTermByName: function( termName ) {
+
+        return this.termsLookup[ termName.toLowerCase() ] || null;
+
     },
     getInitialState: function(){
 
@@ -79,7 +85,11 @@ var AgencyLingo = React.createClass({
     },
 	setActive: function( termName ) {
 
-		this.setState( { activeTerm: this.termsLookup[ termName ] || null } );
+        if( typeof termName !== 'string' ) {
+            termName = null;
+        }
+
+		this.setState( { activeTerm: this.termsLookup[ termName && termName.toLowerCase() ] || null } );
 		if( this.state.route ==='search' ){
 			this.top = document.querySelector( '.search-container' ).getBoundingClientRect().bottom + 'px';
 		} else {
@@ -96,7 +106,7 @@ var AgencyLingo = React.createClass({
 					switch ( this.state.route ) {
 						case 'search' : return ( <LingoSearchContainer terms={this.state.terms} setActive={this.setActive} /> );
 						case 'browse' : return ( <LingoTable terms={this.state.terms} setActive={this.setActive}/> );
-                        case 'admin'  : return ( <LingoAdminTools terms={this.state.terms} setActive={this.setActive}  /> );
+                        case 'admin'  : return ( <LingoAdminTools terms={this.state.terms} getTermByName={this.getTermByName} setActive={this.setActive}  /> );
 					}
 				})()}
 				{ this.state.activeTerm && this.state.route === 'browse' ? 
