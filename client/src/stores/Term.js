@@ -8,6 +8,8 @@ const TermRecord = Immutable.Record({
   related: undefined
 });
 
+var termCounter = 0;
+
 class Term extends TermRecord {
   id: string;
   name: string;
@@ -15,7 +17,7 @@ class Term extends TermRecord {
 
   constructor(name, definition, related = [] ) {
     super({
-      id: Date.now() + Math.round(Math.random() * 1000),
+      id: Date.now() + '' + termCounter++,
       name,
       definition,
       related
