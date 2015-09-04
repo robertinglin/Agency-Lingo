@@ -4,12 +4,28 @@ import {createStore} from 'redux';
 import Term from './Term';
 
 //Set up store.
-var State = Immutable.Map();
+var State = {
+    admin: {
+        hasAdminAccess: false
+    },
+    terms: Immutable.Map()
+}
 
 function TermStore( state = State, action ) {
 
+    if( action.type.indexOf( 'term/') === 0 ) {
 
-            console.log( action );
+        state.terms = TermActions( state.terms, action );
+    } else if( action.type.indexOf( 'admin/' ) ) {
+
+        state.admin = AdminActions( state.admin, action )
+    };
+
+    return state;
+}
+
+function TermActions( state, action ) {
+
     switch ( action.type ) {
 
         case 'term/load-complete':
@@ -29,11 +45,11 @@ function TermStore( state = State, action ) {
             return state.setIn([action.id, 'name'], action.name.trim());
 
         case 'term/update-definition-complete':
-        
+
             return state.setIn([action.id, 'definition'], action.definition.trim());
 
         case 'term/add-related':
-            return state.setIn([action.id, 'related'], state.getIn( [action.id, 'related'] ).push( action.related ));
+            state = state.setIn([action.id, 'related'], state.getIn( [action.id, 'related'] ).push( action.related ));
 
         case 'term/remove-related':
 
@@ -44,7 +60,22 @@ function TermStore( state = State, action ) {
             return state;
 
     }
+}
 
+function AdminActions( state, action ) {
+
+    switch( action.type ) {
+
+        case 'admin/giveAdminAccess': 
+
+            state.hasAdminAccess = true;
+
+            return state;
+
+        default:
+
+            return state;
+    }
 }
 
 function loadTerms( state, rawTerms ) {
@@ -77,7 +108,7 @@ function removeRelated( state, id, relatedTerm ) {
 
         relatedTerms.splice( relatedRemoveIndex, 1 );
 
-        return state.setIn( [action.id, 'related'], relatedTerms );
+        return state = state.setIn( [action.id, 'related'], relatedTerms );
     }
     return state;
 

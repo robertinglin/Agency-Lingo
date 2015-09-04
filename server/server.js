@@ -10,6 +10,7 @@ var bodyParser = require('body-parser');
 var fs 		   = require('fs');
 var db 		   = require('./mongo-connection.js');
 var assert 	   = require('assert');
+var trycatch   = require('trycatch');
 
 var allowCrossDomain = function(req, res, next) {
 	res.header('Access-Control-Allow-Origin', '*');
@@ -37,7 +38,49 @@ var searchForTerm = function( term, collection, callback ){
 
 }
 
+var populateDb = function( force, res  ) {
 
+	db( function( db, callback ){
+
+		termsCollection = db.collection('terms');
+
+		termsCollection.find().toArray(function(err, docs){
+
+			assert.equal(null, err);
+
+			if( force ){
+
+				termsCollection.drop();
+
+			} else if ( docs.length ) {
+
+				return res.status( 409 ).json( { error: 'database already populated' } );
+			}
+
+			var obj;
+
+			fs.readFile( backupDataLocation, 'utf8', function (err, data) {
+
+				if (err) throw err;
+				obj = JSON.parse(data);
+
+				termsCollection.insertMany( obj ).then( function ( r ) {
+
+					return res.json( { success:true } );
+					db.close();
+				});
+			});
+
+		});
+
+	});
+};
+
+var throwInternalError = function( error, res ) {
+
+	res.status( 500 ).json({ error : 'Internal Server Error' } );
+	console.log( error, error.stack );
+};
 
 
 // ROUTES FOR OUR API
@@ -52,87 +95,109 @@ router.get('/', function(req, res) {
 
 router.get('/terms', function(req, res){
 
-	db( function( db, callback ){
+	trycatch( function(){
 
-		termsCollection = db.collection('terms');
+		db( function( db, callback ){
 
-		termsCollection.find().toArray(function(err, docs){
+			termsCollection = db.collection('terms');
 
-			assert.equal(null, err);
+			termsCollection.find().toArray(function(err, docs){
 
-			callback( docs );
+				assert.equal(null, err);
+
+				callback( docs );
+
+				db.close();
+			});
+
+
+		}, function( data ){
+
+			res.json( data );
 		});
 
+	}, function( e ) {
 
-	}, function( data ){
-
-		res.json( data );
-	})
-
+		throwInternalError( e, res );
+	});
 	// res.json()
 });
 
 router.get('/terms/:term', function(req, res){
 	// console.log( req.params.term );
 
-	db( function( db, callback ){
+	trycatch( function(){
 
-		termsCollection = db.collection('terms');
+		db( function( db, callback ){
 
-		searchForTerm( req.params.term, termsCollection, function(err, docs){
+			termsCollection = db.collection('terms');
 
-			assert.equal(null, err);
+			searchForTerm( req.params.term, termsCollection, function(err, docs){
 
-			res.json( docs[ 0 ] );
+				assert.equal(null, err);
+
+				res.json( docs[ 0 ] );
 
 
-			db.close();
+				db.close();
+			});
+
 		});
 
+	}, function( e ) {
+
+		throwInternalError( e, res );
 	});
-})
+});
 
 router.post('/terms/:term/', function(req, res){
 
-	if( req.body.definition.trim() === '' ) {
+	trycatch( function(){
 
-		return res.json({ fail : true } );
-	}
+		if( req.body.definition.trim() === '' ) {
+
+			return res.status( 400 ).json({ error : 'no definition defined' } );
+		}
 
 
-	db( function( db, callback ){
+		db( function( db, callback ){
 
-		termsCollection = db.collection('terms');
+			termsCollection = db.collection('terms');
 
-		searchForTerm( req.params.term, termsCollection, function(err, docs){
+			searchForTerm( req.params.term, termsCollection, function(err, docs){
 
-			assert.equal(null, err);
+				assert.equal(null, err);
 
-			if( docs.length ) {
+				if( docs.length ) {
 
-				res.json({ fail : true } );
-
-				db.close();
-
-			} else {
-
-				var newTerm = { 
-								Name:req.params.term, 
-								Definition: req.body.definition
-							};
-
-				termsCollection.insert([newTerm], function(err, result) {
-
-					assert.equal(null, err);
-
-					res.json({ win: true });
-
+					res.status( 409 ).json({ error : 'Resource already exists. Cannot be duplicated. Use PUT to modify resource' } );
 
 					db.close();
-				});
-			}
+
+				} else {
+
+					var newTerm = { 
+									Name:req.params.term, 
+									Definition: req.body.definition
+								};
+
+					termsCollection.insert([newTerm], function(err, result) {
+
+						assert.equal(null, err);
+
+						res.json({ success: true });
+
+
+						db.close();
+					});
+				}
+			});
+
 		});
 
+	}, function( e ) {
+
+		throwInternalError( e, res );
 	});
 
 });
@@ -140,112 +205,118 @@ router.post('/terms/:term/', function(req, res){
 
 router.put('/terms/:term/', function(req, res){
 
-	if( req.body.definition.trim() === '' ) {
+	trycatch( function(){
 
-		return res.json({ fail : true } );
-	}
+		if( req.body.definition.trim() === '' ) {
+
+			return res.status( 400 ).json({ error : 'no definition defined' } );
+		}
 
 
-	db( function( db, callback ){
+		db( function( db, callback ){
 
-		termsCollection = db.collection('terms');
+			termsCollection = db.collection('terms');
 
-		searchForTerm( req.params.term, termsCollection, function(err, docs){
+			searchForTerm( req.params.term, termsCollection, function(err, docs){
 
-			assert.equal(null, err);
+				assert.equal(null, err);
 
-			if( docs.length ) {
+				if( docs.length ) {
 
-				termsCollection.update(
-				
-					docs[ 0 ], 
-					{ $set: { Definition: req.body.definition } }, 
+					termsCollection.update(
+					
+						docs[ 0 ], 
+						{ $set: { Definition: req.body.definition } }, 
 
-				function(err, result) {
+					function(err, result) {
 
-					assert.equal(null, err);
+						assert.equal(null, err);
 
-					res.json({ win: true });
+						res.json({ success: true });
 
+
+						db.close();
+					});
+					
+					
+				} else {
+
+					res.status( 409 ).json({ error : 'No resource exists to edit' } );
+					
 
 					db.close();
-				});
-				
-				
-			} else {
-
-				res.json({ fail : true } );
-				
-
-				db.close();
-			}
+				}
+			});
 		});
+
+	}, function( e ) {
+
+		throwInternalError( e, res );
 	});
 });
 
 router.delete('/terms/:term/', function(req, res){
 
-	db( function( db, callback ){
+	trycatch( function(){
 
-		termsCollection = db.collection('terms');
+		db( function( db, callback ){
 
-		searchForTerm( req.params.term, termsCollection, function(err, docs){
+			termsCollection = db.collection('terms');
 
-			assert.equal(null, err);
+			searchForTerm( req.params.term, termsCollection, function(err, docs){
 
-			if( docs.length ) {
+				assert.equal(null, err);
 
-				termsCollection.remove( docs[ 0 ], function(err, result) {
+				if( docs.length ) {
 
-					assert.equal(err, null);
-					assert.equal(1, result.result.n);
+					termsCollection.remove( docs[ 0 ], function(err, result) {
 
-					res.json({ win: true });
+						assert.equal(err, null);
+						assert.equal(1, result.result.n);
+
+						res.json({ success: true });
+
+						db.close();
+					});
+
+				} else {
+					
+					res.status( 409 ).json({ error : 'No resource exists to delete' } );
 
 					db.close();
-				});
-				//
-			} else {
-				
-				res.json({ fail : true } );
-
-				db.close();
-			}
+				}
+			});
 		});
+
+	}, function( e ) {
+
+		throwInternalError( e, res );
 	});
 });
 
 router.get( '/populatedb', function( req, res ){
 
-	db( function( db, callback ){
+	trycatch( function(){
 
-		termsCollection = db.collection('terms');
+		populateDb( false, res );
 
-		termsCollection.find().toArray(function(err, docs){
+	}, function( e ) {
 
-			assert.equal(null, err);
-
-			if( docs.length ) {
-
-				termsCollection.drop();
-				// return res.json( { fail:true } );
-			}
-
-			var obj;
-			fs.readFile( backupDataLocation, 'utf8', function (err, data) {
-				if (err) throw err;
-				obj = JSON.parse(data);
-
-				termsCollection.insertMany( obj ).then( function ( r ) {
-
-					return res.json( { win:true } );
-					db.close();
-				});
-			});
-
-		});
-
+		throwInternalError( e, res );
 	});
+});
+
+router.get( '/populatedb-force', function( req, res ) {
+
+	trycatch( function(){
+
+		populateDb( true, res );
+
+	}, function( e ) {
+
+		throwInternalError( e, res );
+	});
+
 });
 
 // REGISTER OUR ROUTES -------------------------------
@@ -285,6 +356,6 @@ console.log('Magic happens on port ' + port);
 // 		collection.find({ name: termToAdd.name }).toArray(function( err, terms ){
 
 // 			console.log( terms );
-// 		})
+// 		});
 // 	}	
 // }
